@@ -15,6 +15,7 @@ target 'kd_study' do
 #    pod 'MenuItemKit', '~> 3.0.0'
 #    pod 'SSZipArchive', '~> 1.8.1'           #ZIP解压库
     pod 'SnapKit'
+    pod 'Masonry'
 
     pod 'pop', '~> 1.0.10'
 

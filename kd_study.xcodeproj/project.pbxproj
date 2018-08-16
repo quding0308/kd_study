@@ -7,7 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E15F84A21251FCD00C9F734 /* TestString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F83F21251FCC00C9F734 /* TestString.swift */; };
+		1E15F84B21251FCD00C9F734 /* TestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84021251FCC00C9F734 /* TestProtocol.swift */; };
+		1E15F84C21251FCD00C9F734 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84121251FCC00C9F734 /* MyView.swift */; };
+		1E15F84D21251FCD00C9F734 /* Hello 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84221251FCC00C9F734 /* Hello 2.swift */; };
+		1E15F84E21251FCD00C9F734 /* TestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84321251FCC00C9F734 /* TestStruct.swift */; };
+		1E15F84F21251FCD00C9F734 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84521251FCC00C9F734 /* MyClass.swift */; };
+		1E15F85021251FCD00C9F734 /* EnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84621251FCC00C9F734 /* EnumTest.swift */; };
+		1E15F85121251FCD00C9F734 /* RuntimeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84721251FCD00C9F734 /* RuntimeDemo.swift */; };
+		1E15F85221251FCD00C9F734 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84821251FCD00C9F734 /* TestMethod.swift */; };
+		1E15F85321251FCD00C9F734 /* TestOperatorMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */; };
 		1E1A892C2122776F00CD33B5 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1A892B2122776F00CD33B5 /* Hello.swift */; };
+		1E3739D221243166002C1352 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3739D121243166002C1352 /* Image.xcassets */; };
+		1E3739D821243250002C1352 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3739D521243250002C1352 /* Stack.swift */; };
+		1E3739D921243250002C1352 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3739D621243250002C1352 /* Queue.swift */; };
+		1E3739DA21243250002C1352 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3739D721243250002C1352 /* Heap.swift */; };
+		1E8E3C762122ACA4001418E5 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E3C752122ACA4001418E5 /* 2.png */; };
 		1EBA7A09212275C3008F518C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA7A08212275C3008F518C /* AppDelegate.m */; };
 		1EBA7A0C212275C3008F518C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA7A0B212275C3008F518C /* ViewController.m */; };
 		1EBA7A0F212275C3008F518C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBA7A0D212275C3008F518C /* Main.storyboard */; };
@@ -39,8 +54,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E15F83F21251FCC00C9F734 /* TestString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestString.swift; sourceTree = "<group>"; };
+		1E15F84021251FCC00C9F734 /* TestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProtocol.swift; sourceTree = "<group>"; };
+		1E15F84121251FCC00C9F734 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		1E15F84221251FCC00C9F734 /* Hello 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hello 2.swift"; sourceTree = "<group>"; };
+		1E15F84321251FCC00C9F734 /* TestStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStruct.swift; sourceTree = "<group>"; };
+		1E15F84521251FCC00C9F734 /* MyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		1E15F84621251FCC00C9F734 /* EnumTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTest.swift; sourceTree = "<group>"; };
+		1E15F84721251FCD00C9F734 /* RuntimeDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeDemo.swift; sourceTree = "<group>"; };
+		1E15F84821251FCD00C9F734 /* TestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMethod.swift; sourceTree = "<group>"; };
+		1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestOperatorMethod.swift; sourceTree = "<group>"; };
 		1E1A892A2122776F00CD33B5 /* kd_study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kd_study-Bridging-Header.h"; sourceTree = "<group>"; };
 		1E1A892B2122776F00CD33B5 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
+		1E3739D121243166002C1352 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		1E3739D521243250002C1352 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		1E3739D621243250002C1352 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		1E3739D721243250002C1352 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		1E8E3C752122ACA4001418E5 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		1EBA7A04212275C3008F518C /* kd_study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kd_study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EBA7A07212275C3008F518C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1EBA7A08212275C3008F518C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,13 +126,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E15F84421251FCC00C9F734 /* Te */ = {
+			isa = PBXGroup;
+			children = (
+				1E15F84521251FCC00C9F734 /* MyClass.swift */,
+			);
+			path = Te;
+			sourceTree = "<group>";
+		};
+		1E15F8542125209500C9F734 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
 		1E1A89282122774B00CD33B5 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				1E15F84421251FCC00C9F734 /* Te */,
+				1E15F84621251FCC00C9F734 /* EnumTest.swift */,
+				1E15F84221251FCC00C9F734 /* Hello 2.swift */,
+				1E15F84121251FCC00C9F734 /* MyView.swift */,
+				1E15F84721251FCD00C9F734 /* RuntimeDemo.swift */,
+				1E15F84821251FCD00C9F734 /* TestMethod.swift */,
+				1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */,
+				1E15F84021251FCC00C9F734 /* TestProtocol.swift */,
+				1E15F83F21251FCC00C9F734 /* TestString.swift */,
+				1E15F84321251FCC00C9F734 /* TestStruct.swift */,
 				1E1A892B2122776F00CD33B5 /* Hello.swift */,
-				1E1A892A2122776F00CD33B5 /* kd_study-Bridging-Header.h */,
 			);
 			path = Swift;
+			sourceTree = "<group>";
+		};
+		1E3739D321243222002C1352 /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				1E3739D421243250002C1352 /* DataStructure */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
+		1E3739D421243250002C1352 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				1E3739D521243250002C1352 /* Stack.swift */,
+				1E3739D621243250002C1352 /* Queue.swift */,
+				1E3739D721243250002C1352 /* Heap.swift */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		1E8E3C742122AC74001418E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E3739D121243166002C1352 /* Image.xcassets */,
+				1E8E3C752122ACA4001418E5 /* 2.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		1EBA79FB212275C3008F518C = {
@@ -130,6 +211,9 @@
 		1EBA7A06212275C3008F518C /* kd_study */ = {
 			isa = PBXGroup;
 			children = (
+				1E15F8542125209500C9F734 /* runtime */,
+				1E3739D321243222002C1352 /* algorithm */,
+				1E8E3C742122AC74001418E5 /* Resources */,
 				1E1A89282122774B00CD33B5 /* Swift */,
 				1EBA7A07212275C3008F518C /* AppDelegate.h */,
 				1EBA7A08212275C3008F518C /* AppDelegate.m */,
@@ -140,6 +224,7 @@
 				1EBA7A12212275C4008F518C /* LaunchScreen.storyboard */,
 				1EBA7A15212275C4008F518C /* Info.plist */,
 				1EBA7A16212275C4008F518C /* main.m */,
+				1E1A892A2122776F00CD33B5 /* kd_study-Bridging-Header.h */,
 			);
 			path = kd_study;
 			sourceTree = "<group>";
@@ -294,6 +379,8 @@
 			files = (
 				1EBA7A14212275C4008F518C /* LaunchScreen.storyboard in Resources */,
 				1EBA7A11212275C4008F518C /* Assets.xcassets in Resources */,
+				1E3739D221243166002C1352 /* Image.xcassets in Resources */,
+				1E8E3C762122ACA4001418E5 /* 2.png in Resources */,
 				1EBA7A0F212275C3008F518C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,9 +464,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EBA7A0C212275C3008F518C /* ViewController.m in Sources */,
+				1E3739D921243250002C1352 /* Queue.swift in Sources */,
+				1E15F84C21251FCD00C9F734 /* MyView.swift in Sources */,
+				1E15F85321251FCD00C9F734 /* TestOperatorMethod.swift in Sources */,
+				1E15F84A21251FCD00C9F734 /* TestString.swift in Sources */,
+				1E3739D821243250002C1352 /* Stack.swift in Sources */,
+				1E15F84D21251FCD00C9F734 /* Hello 2.swift in Sources */,
+				1E15F85021251FCD00C9F734 /* EnumTest.swift in Sources */,
+				1E15F84B21251FCD00C9F734 /* TestProtocol.swift in Sources */,
 				1EBA7A17212275C4008F518C /* main.m in Sources */,
+				1E15F84F21251FCD00C9F734 /* MyClass.swift in Sources */,
+				1E15F84E21251FCD00C9F734 /* TestStruct.swift in Sources */,
 				1E1A892C2122776F00CD33B5 /* Hello.swift in Sources */,
+				1E15F85221251FCD00C9F734 /* TestMethod.swift in Sources */,
+				1E15F85121251FCD00C9F734 /* RuntimeDemo.swift in Sources */,
 				1EBA7A09212275C3008F518C /* AppDelegate.m in Sources */,
+				1E3739DA21243250002C1352 /* Heap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +662,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "606c668b-fc10-49c8-9212-e56e25800b21";
 				PROVISIONING_PROFILE_SPECIFIER = "KDWeiboClient Dev";
-				SWIFT_OBJC_BRIDGING_HEADER = "kd_study/Swift/kd_study-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "kd_study/kd_study-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -586,7 +686,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdweibo.client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "kd_study/Swift/kd_study-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "kd_study/kd_study-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
