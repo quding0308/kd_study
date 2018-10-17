@@ -25,6 +25,7 @@ class Peter {
         name = ""
         print("init")
         tag = "TAG"
+        
     }
     
     convenience init(_ name: String) {

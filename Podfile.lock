@@ -14,17 +14,17 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - Differentiator (3.0.2)
+  - Differentiator (3.1.0)
   - Masonry (1.1.0)
-  - pop (1.0.10)
-  - RxCocoa (4.2.0):
+  - pop (1.0.12)
+  - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
-  - RxDataSources (3.0.2):
+  - RxDataSources (3.1.0):
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxSwift (4.2.0)
-  - SnapKit (4.0.0)
+  - RxSwift (4.3.1)
+  - SnapKit (4.0.1)
 
 DEPENDENCIES:
   - AFNetworking
@@ -48,14 +48,14 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
-  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
-  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
-  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: d0272be5b222421ebc582c251986c21b36121975
+PODFILE CHECKSUM: d08e29aee33db9341955bb7fbc404de293b46c8e
 
 COCOAPODS: 1.5.3
