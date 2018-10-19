@@ -12,6 +12,8 @@
 
 #import "kd_study-Swift.h"
 
+#import "DispatchTest.h"
+
 @interface ViewController ()
 
 @property (nonatomic, strong) UIImageView *imgView;
@@ -25,6 +27,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [[[Hello alloc] init] hello];
+    
+    [DispatchTest test];
     
     self.view.backgroundColor = UIColor.lightGrayColor;
     [self.view addSubview:self.imgView];

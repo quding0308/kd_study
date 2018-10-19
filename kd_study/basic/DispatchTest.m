@@ -8,7 +8,15 @@
 
 #import "DispatchTest.h"
 
+#import <UIKit/UIKit.h>
+
 @implementation DispatchTest
+
++ (void)test {
+    DispatchTest *test = [[DispatchTest alloc] init];
+    
+    [test qdSemaphore];
+}
 
 /*
  A dispatch group is a mechanism for monitoring a set of blocks. Your application can monitor the blocks in the group synchronously or asynchronously depending on your needs. By extension, a group can be useful for synchronizing for code that depends on the completion of other tasks.
@@ -51,6 +59,28 @@
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         //
     });
+    
+    
+}
+
+- (void)qdSemaphore {
+    dispatch_semaphore_t _semaphoer;
+    _semaphoer = dispatch_semaphore_create(0);
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"=== dispatch_semaphore_signal");
+        dispatch_semaphore_signal(_semaphoer);
+
+    });
+    
+    dispatch_semaphore_wait(_semaphoer, DISPATCH_TIME_FOREVER);
+    [UIView animateWithDuration:5 animations:^{
+        NSLog(@"animations");
+    } completion:^(BOOL finished) {
+        NSLog(@"animations finished");
+    }];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 1), ^{
+//    });
     
     
 }
