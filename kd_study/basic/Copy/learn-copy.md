@@ -27,10 +27,10 @@
 
 用代码简单表示如下：
 ```
-    [immutableObject copy] // 浅拷贝
-    [immutableObject mutableCopy] //深拷贝
-    [mutableObject copy] //深拷贝
-    [mutableObject mutableCopy] //深拷贝
+[immutableObject copy] // 浅拷贝
+[immutableObject mutableCopy] //深拷贝
+[mutableObject copy] //深拷贝
+[mutableObject mutableCopy] //深拷贝
 ```
 
 在集合类对象中，对immutable对象进行copy，是指针拷贝，mutableCopy是内容拷贝；对mutable对象进行copy和mutableCopy都是内容拷贝。但是：集合对象的内容拷贝仅限于对象本身，对象元素仍然是指针拷贝。
