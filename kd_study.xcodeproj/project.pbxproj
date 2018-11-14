@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0F59EB219BCA150021B979 /* KDLockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F59EA219BCA150021B979 /* KDLockTest.m */; };
 		1E15F84A21251FCD00C9F734 /* TestString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F83F21251FCC00C9F734 /* TestString.swift */; };
 		1E15F84B21251FCD00C9F734 /* TestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84021251FCC00C9F734 /* TestProtocol.swift */; };
 		1E15F84C21251FCD00C9F734 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84121251FCC00C9F734 /* MyView.swift */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E0F59E9219BCA150021B979 /* KDLockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDLockTest.h; sourceTree = "<group>"; };
+		1E0F59EA219BCA150021B979 /* KDLockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDLockTest.m; sourceTree = "<group>"; };
 		1E15F83F21251FCC00C9F734 /* TestString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestString.swift; sourceTree = "<group>"; };
 		1E15F84021251FCC00C9F734 /* TestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProtocol.swift; sourceTree = "<group>"; };
 		1E15F84121251FCC00C9F734 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 				1EDB046F217708EA0039A010 /* RunLoopTest.m */,
 				1E6FBD06217741E100876206 /* DispatchTest.h */,
 				1E6FBD07217741E100876206 /* DispatchTest.m */,
+				1E0F59E9219BCA150021B979 /* KDLockTest.h */,
+				1E0F59EA219BCA150021B979 /* KDLockTest.m */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 				1E15F85021251FCD00C9F734 /* EnumTest.swift in Sources */,
 				1E15F84B21251FCD00C9F734 /* TestProtocol.swift in Sources */,
 				1EBA7A17212275C4008F518C /* main.m in Sources */,
+				1E0F59EB219BCA150021B979 /* KDLockTest.m in Sources */,
 				1E15F84F21251FCD00C9F734 /* MyClass.swift in Sources */,
 				1E6FBD08217741E100876206 /* DispatchTest.m in Sources */,
 				1E15F84E21251FCD00C9F734 /* TestStruct.swift in Sources */,

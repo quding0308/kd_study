@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "KDLockTest.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        [KDLockTest test];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
