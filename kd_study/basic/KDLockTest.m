@@ -180,7 +180,7 @@
     // 满足 condition == 1 加锁
     [lock tryLockWhenCondition:1];
     
-    // 直接加锁  忽略 condition 
+    // 直接加锁  忽略 condition
     [lock tryLock];
     
     // 解锁 并且 设置 condition = 2

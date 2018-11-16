@@ -70,6 +70,11 @@ class MyView: UIView {
         
         var scale = POPBasicAnimation.easeIn()
     }
+    
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        return nil
+    }
+    
 }
 
 // MARK: - action -

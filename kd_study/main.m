@@ -12,7 +12,7 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        [KDLockTest test];
+//        [KDLockTest test];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

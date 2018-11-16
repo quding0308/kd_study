@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "LastResponder.h"
+
 @interface AppDelegate ()
 
 @end
@@ -47,5 +49,8 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (UIResponder *)nextResponder {
+    return [[LastResponder alloc] init];
+}
 
 @end

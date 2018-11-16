@@ -20,6 +20,7 @@
 		1E15F85321251FCD00C9F734 /* TestOperatorMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */; };
 		1E1A892C2122776F00CD33B5 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1A892B2122776F00CD33B5 /* Hello.swift */; };
 		1E3739D221243166002C1352 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3739D121243166002C1352 /* Image.xcassets */; };
+		1E4292C5219C275C00B0A825 /* LastResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4292C4219C275C00B0A825 /* LastResponder.m */; };
 		1E4BDF5A217B79A0007E23ED /* CopyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BDF59217B79A0007E23ED /* CopyTest.m */; };
 		1E6FBD08217741E100876206 /* DispatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FBD07217741E100876206 /* DispatchTest.m */; };
 		1E8E3C762122ACA4001418E5 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E3C752122ACA4001418E5 /* 2.png */; };
@@ -70,6 +71,8 @@
 		1E1A892A2122776F00CD33B5 /* kd_study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kd_study-Bridging-Header.h"; sourceTree = "<group>"; };
 		1E1A892B2122776F00CD33B5 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 		1E3739D121243166002C1352 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		1E4292C3219C275C00B0A825 /* LastResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastResponder.h; sourceTree = "<group>"; };
+		1E4292C4219C275C00B0A825 /* LastResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastResponder.m; sourceTree = "<group>"; };
 		1E4BDF57217B78C6007E23ED /* learn-copy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "learn-copy.md"; sourceTree = "<group>"; };
 		1E4BDF58217B79A0007E23ED /* CopyTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyTest.h; sourceTree = "<group>"; };
 		1E4BDF59217B79A0007E23ED /* CopyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyTest.m; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 				1EBA7A15212275C4008F518C /* Info.plist */,
 				1EBA7A16212275C4008F518C /* main.m */,
 				1E1A892A2122776F00CD33B5 /* kd_study-Bridging-Header.h */,
+				1E4292C3219C275C00B0A825 /* LastResponder.h */,
+				1E4292C4219C275C00B0A825 /* LastResponder.m */,
 			);
 			path = kd_study;
 			sourceTree = "<group>";
@@ -516,6 +521,7 @@
 				1EBA7A0C212275C3008F518C /* ViewController.m in Sources */,
 				1E15F84C21251FCD00C9F734 /* MyView.swift in Sources */,
 				1E15F85321251FCD00C9F734 /* TestOperatorMethod.swift in Sources */,
+				1E4292C5219C275C00B0A825 /* LastResponder.m in Sources */,
 				1E15F84A21251FCD00C9F734 /* TestString.swift in Sources */,
 				1E15F84D21251FCD00C9F734 /* Hello 2.swift in Sources */,
 				1E15F85021251FCD00C9F734 /* EnumTest.swift in Sources */,
