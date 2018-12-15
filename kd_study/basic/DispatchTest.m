@@ -15,7 +15,8 @@
 + (void)test {
     DispatchTest *test = [[DispatchTest alloc] init];
     
-    [test qdSemaphore];
+//    [test qdSemaphore];
+    [test qdGroup];
 }
 
 /*
@@ -43,24 +44,34 @@
     dispatch_group_enter(group);
         // do sth  做的任务
     // 使group中的task 数量减1   dispatch_group_enter和dispatch_group_leave要匹配，否则系统会认为group任务没有执行完毕
-    dispatch_group_leave(group);
-    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"dispatch_group_leave 222");
+            dispatch_group_leave(group);
+        });
+    });
+
 // 方法2：
     // 把异步任务添加到group 相当于增加一个task    queue为 block任务执行的线程队列
-    dispatch_group_async(group, dispatch_get_main_queue(), ^{
-        //
+
+    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"dispatch_group_async ;;;");
     });
-    
-    
-    // 等待组任务完成，会阻塞当前线程  当group中的所有task执行完，才会解除阻塞当前线程
-    dispatch_group_wait(group, 30);
-    
+
+
     // 当group中的所有task 执行完毕时调用，不会阻塞当前线程
-    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-        //
+    dispatch_group_notify(group, dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"dispatch_group_notify");
     });
-    
-    
+
+    // 等待组任务完成，会阻塞当前线程  当group中的所有task执行完，才会解除阻塞当前线程
+
+    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+        dispatch_group_wait(group, 30);
+        NSLog(@"111 end");
+    });
+
 }
 
 - (void)qdSemaphore {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E0F59EB219BCA150021B979 /* KDLockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F59EA219BCA150021B979 /* KDLockTest.m */; };
+		1E068757217B84B60005E4AF /* ArchiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E068756217B84B60005E4AF /* ArchiveTest.m */; };
 		1E15F84A21251FCD00C9F734 /* TestString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F83F21251FCC00C9F734 /* TestString.swift */; };
 		1E15F84B21251FCD00C9F734 /* TestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84021251FCC00C9F734 /* TestProtocol.swift */; };
 		1E15F84C21251FCD00C9F734 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84121251FCC00C9F734 /* MyView.swift */; };
@@ -23,6 +24,7 @@
 		1E4292C5219C275C00B0A825 /* LastResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4292C4219C275C00B0A825 /* LastResponder.m */; };
 		1E4BDF5A217B79A0007E23ED /* CopyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BDF59217B79A0007E23ED /* CopyTest.m */; };
 		1E6FBD08217741E100876206 /* DispatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FBD07217741E100876206 /* DispatchTest.m */; };
+		1E79DAE2219D8A1A00867F1A /* CopyTest+Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79DAE1219D8A1A00867F1A /* CopyTest+Hello.m */; };
 		1E8E3C762122ACA4001418E5 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E3C752122ACA4001418E5 /* 2.png */; };
 		1EBA7A09212275C3008F518C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA7A08212275C3008F518C /* AppDelegate.m */; };
 		1EBA7A0C212275C3008F518C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA7A0B212275C3008F518C /* ViewController.m */; };
@@ -58,6 +60,8 @@
 /* Begin PBXFileReference section */
 		1E0F59E9219BCA150021B979 /* KDLockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDLockTest.h; sourceTree = "<group>"; };
 		1E0F59EA219BCA150021B979 /* KDLockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDLockTest.m; sourceTree = "<group>"; };
+		1E068755217B84B60005E4AF /* ArchiveTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchiveTest.h; sourceTree = "<group>"; };
+		1E068756217B84B60005E4AF /* ArchiveTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiveTest.m; sourceTree = "<group>"; };
 		1E15F83F21251FCC00C9F734 /* TestString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestString.swift; sourceTree = "<group>"; };
 		1E15F84021251FCC00C9F734 /* TestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProtocol.swift; sourceTree = "<group>"; };
 		1E15F84121251FCC00C9F734 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		1E4BDF59217B79A0007E23ED /* CopyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyTest.m; sourceTree = "<group>"; };
 		1E6FBD06217741E100876206 /* DispatchTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchTest.h; sourceTree = "<group>"; };
 		1E6FBD07217741E100876206 /* DispatchTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchTest.m; sourceTree = "<group>"; };
+		1E79DAE0219D8A1A00867F1A /* CopyTest+Hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CopyTest+Hello.h"; sourceTree = "<group>"; };
+		1E79DAE1219D8A1A00867F1A /* CopyTest+Hello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CopyTest+Hello.m"; sourceTree = "<group>"; };
 		1E8E3C752122ACA4001418E5 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		1EBA7A04212275C3008F518C /* kd_study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kd_study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EBA7A07212275C3008F518C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +142,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E068754217B84A70005E4AF /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				1E068755217B84B60005E4AF /* ArchiveTest.h */,
+				1E068756217B84B60005E4AF /* ArchiveTest.m */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
 		1E15F84421251FCC00C9F734 /* Te */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +190,8 @@
 				1E4BDF57217B78C6007E23ED /* learn-copy.md */,
 				1E4BDF58217B79A0007E23ED /* CopyTest.h */,
 				1E4BDF59217B79A0007E23ED /* CopyTest.m */,
+				1E79DAE0219D8A1A00867F1A /* CopyTest+Hello.h */,
+				1E79DAE1219D8A1A00867F1A /* CopyTest+Hello.m */,
 			);
 			path = Copy;
 			sourceTree = "<group>";
@@ -254,6 +271,7 @@
 		1EDB046E217708CF0039A010 /* basic */ = {
 			isa = PBXGroup;
 			children = (
+				1E068754217B84A70005E4AF /* Archive */,
 				1E4BDF56217B78A4007E23ED /* Copy */,
 				1EDB0470217708EA0039A010 /* RunLoopTest.h */,
 				1EDB046F217708EA0039A010 /* RunLoopTest.m */,
@@ -536,6 +554,8 @@
 				1E1A892C2122776F00CD33B5 /* Hello.swift in Sources */,
 				1E15F85221251FCD00C9F734 /* TestMethod.swift in Sources */,
 				1E15F85121251FCD00C9F734 /* RuntimeDemo.swift in Sources */,
+				1E068757217B84B60005E4AF /* ArchiveTest.m in Sources */,
+				1E79DAE2219D8A1A00867F1A /* CopyTest+Hello.m in Sources */,
 				1EBA7A09212275C3008F518C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
