@@ -9,7 +9,7 @@
 import Foundation
 
 @objcMembers
-class MyClass: NSObject {
+class MyClass1: NSObject {
     
     func hello() {
         //
@@ -22,13 +22,13 @@ class MyClass: NSObject {
 }
 
 
-class FirstClass: MyClass {
+class FirstClass: MyClass1 {
     override func hello() {
         print("FirstClass")
     }
 }
 
-class SecondClass: MyClass {
+class SecondClass: MyClass1 {
     override func hello() {
         print("SecondClass")
     }

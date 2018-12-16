@@ -59,8 +59,8 @@ class RuntimeDemo: NSObject {
         for i in 0..<Int(count) {
             if let clsName = String(utf8String: classes[i]) {
                 if let cls = NSClassFromString(clsName) {
-                    if cls.self is MyClass.Type {
-                        if let aClass = cls as? MyClass.Type {                            
+                    if cls.self is MyClass1.Type {
+                        if let aClass = cls as? MyClass1.Type {                            
                             let obj = aClass.init()
                             obj.hello()
                         }
