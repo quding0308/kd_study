@@ -20,15 +20,29 @@
 		1E15F85221251FCD00C9F734 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84821251FCD00C9F734 /* TestMethod.swift */; };
 		1E15F85321251FCD00C9F734 /* TestOperatorMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */; };
 		1E1A892C2122776F00CD33B5 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1A892B2122776F00CD33B5 /* Hello.swift */; };
-		1E1B0BFF21C54F84001ED292 /* RuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B0BFE21C54F84001ED292 /* RuntimeTest.m */; };
-		1E1B0C0221C561B0001ED292 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B0C0121C561B0001ED292 /* MyClass.m */; };
-		1E1B0C0521C6A8D5001ED292 /* RuntimeTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B0C0421C6A8D5001ED292 /* RuntimeTest2.m */; };
 		1E3739D221243166002C1352 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3739D121243166002C1352 /* Image.xcassets */; };
 		1E4292C5219C275C00B0A825 /* LastResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4292C4219C275C00B0A825 /* LastResponder.m */; };
 		1E4BDF5A217B79A0007E23ED /* CopyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BDF59217B79A0007E23ED /* CopyTest.m */; };
 		1E6FBD08217741E100876206 /* DispatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FBD07217741E100876206 /* DispatchTest.m */; };
 		1E79DAE2219D8A1A00867F1A /* CopyTest+Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79DAE1219D8A1A00867F1A /* CopyTest+Hello.m */; };
 		1E8E3C762122ACA4001418E5 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E3C752122ACA4001418E5 /* 2.png */; };
+		1EB4124A21C4DBDC00EEFECB /* TestMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4122721C4DBDC00EEFECB /* TestMethod.m */; };
+		1EB4124B21C4DBDC00EEFECB /* TestProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4122921C4DBDC00EEFECB /* TestProperty.m */; };
+		1EB4124C21C4DBDC00EEFECB /* TestLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4122C21C4DBDC00EEFECB /* TestLibrary.m */; };
+		1EB4124D21C4DBDC00EEFECB /* TestWeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4122D21C4DBDC00EEFECB /* TestWeak.m */; };
+		1EB4124E21C4DBDC00EEFECB /* TestAssociateObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4123221C4DBDC00EEFECB /* TestAssociateObj.m */; };
+		1EB4124F21C4DBDC00EEFECB /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4123321C4DBDC00EEFECB /* TestClass.m */; };
+		1EB4125021C4DBDC00EEFECB /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4123421C4DBDC00EEFECB /* TestBlock.m */; };
+		1EB4125121C4DBDC00EEFECB /* TestObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4123621C4DBDC00EEFECB /* TestObjc.m */; };
+		1EB4125221C4DBDC00EEFECB /* TestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4123921C4DBDC00EEFECB /* TestProtocol.m */; };
+		1EB4125321C4DBDC00EEFECB /* TestSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4123A21C4DBDC00EEFECB /* TestSelector.m */; };
+		1EB4125421C4DBDC00EEFECB /* TestIVar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4123B21C4DBDC00EEFECB /* TestIVar.m */; };
+		1EB4125521C4DBDC00EEFECB /* SubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4123E21C4DBDC00EEFECB /* SubClass.m */; };
+		1EB4125621C4DBDC00EEFECB /* SuperClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4124021C4DBDC00EEFECB /* SuperClass.mm */; };
+		1EB4125721C4DBDC00EEFECB /* hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4124321C4DBDC00EEFECB /* hello.m */; };
+		1EB4125921C4DBDC00EEFECB /* TestTaggedPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4124721C4DBDC00EEFECB /* TestTaggedPointer.m */; };
+		1EB4125A21C4DBDC00EEFECB /* RuntimeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4124921C4DBDC00EEFECB /* RuntimeDemo.m */; };
+		1EB4125D21C4DC0300EEFECB /* KDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4125C21C4DC0300EEFECB /* KDUtil.m */; };
 		1EBA7A09212275C3008F518C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA7A08212275C3008F518C /* AppDelegate.m */; };
 		1EBA7A0C212275C3008F518C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA7A0B212275C3008F518C /* ViewController.m */; };
 		1EBA7A0F212275C3008F518C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBA7A0D212275C3008F518C /* Main.storyboard */; };
@@ -37,6 +51,9 @@
 		1EBA7A17212275C4008F518C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA7A16212275C4008F518C /* main.m */; };
 		1EBA7A21212275C4008F518C /* kd_studyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA7A20212275C4008F518C /* kd_studyTests.m */; };
 		1EBA7A2C212275C4008F518C /* kd_studyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA7A2B212275C4008F518C /* kd_studyUITests.m */; };
+		1EBF65A921C73762000D92ED /* RuntimeTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF65A621C73762000D92ED /* RuntimeTest2.m */; };
+		1EBF65AA21C73762000D92ED /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF65A721C73762000D92ED /* MyClass.m */; };
+		1EBF65AB21C73762000D92ED /* RuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF65A821C73762000D92ED /* RuntimeTest.m */; };
 		1EDB0471217708EA0039A010 /* RunLoopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB046F217708EA0039A010 /* RunLoopTest.m */; };
 		8246D214DB75C23992B0D663 /* Pods_kd_studyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FEEF1B482DC0D3D398C81F /* Pods_kd_studyTests.framework */; };
 		EEA59CF16C480EBBBC288040 /* Pods_kd_studyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7471DB7B6EE81ECAF47A80A /* Pods_kd_studyUITests.framework */; };
@@ -77,12 +94,6 @@
 		1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestOperatorMethod.swift; sourceTree = "<group>"; };
 		1E1A892A2122776F00CD33B5 /* kd_study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kd_study-Bridging-Header.h"; sourceTree = "<group>"; };
 		1E1A892B2122776F00CD33B5 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
-		1E1B0BFD21C54F84001ED292 /* RuntimeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeTest.h; sourceTree = "<group>"; };
-		1E1B0BFE21C54F84001ED292 /* RuntimeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeTest.m; sourceTree = "<group>"; };
-		1E1B0C0021C561B0001ED292 /* MyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
-		1E1B0C0121C561B0001ED292 /* MyClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
-		1E1B0C0321C6A8D5001ED292 /* RuntimeTest2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeTest2.h; sourceTree = "<group>"; };
-		1E1B0C0421C6A8D5001ED292 /* RuntimeTest2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeTest2.m; sourceTree = "<group>"; };
 		1E3739D121243166002C1352 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		1E4292C3219C275C00B0A825 /* LastResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastResponder.h; sourceTree = "<group>"; };
 		1E4292C4219C275C00B0A825 /* LastResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastResponder.m; sourceTree = "<group>"; };
@@ -94,6 +105,40 @@
 		1E79DAE0219D8A1A00867F1A /* CopyTest+Hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CopyTest+Hello.h"; sourceTree = "<group>"; };
 		1E79DAE1219D8A1A00867F1A /* CopyTest+Hello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CopyTest+Hello.m"; sourceTree = "<group>"; };
 		1E8E3C752122ACA4001418E5 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		1EB4122621C4DBDC00EEFECB /* TestAssociateObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAssociateObj.h; sourceTree = "<group>"; };
+		1EB4122721C4DBDC00EEFECB /* TestMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMethod.m; sourceTree = "<group>"; };
+		1EB4122821C4DBDC00EEFECB /* TestObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjc.h; sourceTree = "<group>"; };
+		1EB4122921C4DBDC00EEFECB /* TestProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProperty.m; sourceTree = "<group>"; };
+		1EB4122A21C4DBDC00EEFECB /* TestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
+		1EB4122B21C4DBDC00EEFECB /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		1EB4122C21C4DBDC00EEFECB /* TestLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLibrary.m; sourceTree = "<group>"; };
+		1EB4122D21C4DBDC00EEFECB /* TestWeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWeak.m; sourceTree = "<group>"; };
+		1EB4122E21C4DBDC00EEFECB /* TestSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSelector.h; sourceTree = "<group>"; };
+		1EB4122F21C4DBDC00EEFECB /* TestIVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestIVar.h; sourceTree = "<group>"; };
+		1EB4123021C4DBDC00EEFECB /* TestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
+		1EB4123121C4DBDC00EEFECB /* TestMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMethod.h; sourceTree = "<group>"; };
+		1EB4123221C4DBDC00EEFECB /* TestAssociateObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAssociateObj.m; sourceTree = "<group>"; };
+		1EB4123321C4DBDC00EEFECB /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		1EB4123421C4DBDC00EEFECB /* TestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlock.m; sourceTree = "<group>"; };
+		1EB4123521C4DBDC00EEFECB /* TestProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProperty.h; sourceTree = "<group>"; };
+		1EB4123621C4DBDC00EEFECB /* TestObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjc.m; sourceTree = "<group>"; };
+		1EB4123721C4DBDC00EEFECB /* TestWeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWeak.h; sourceTree = "<group>"; };
+		1EB4123821C4DBDC00EEFECB /* TestLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLibrary.h; sourceTree = "<group>"; };
+		1EB4123921C4DBDC00EEFECB /* TestProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProtocol.m; sourceTree = "<group>"; };
+		1EB4123A21C4DBDC00EEFECB /* TestSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSelector.m; sourceTree = "<group>"; };
+		1EB4123B21C4DBDC00EEFECB /* TestIVar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestIVar.m; sourceTree = "<group>"; };
+		1EB4123C21C4DBDC00EEFECB /* RuntimeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeDemo.h; sourceTree = "<group>"; };
+		1EB4123E21C4DBDC00EEFECB /* SubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubClass.m; sourceTree = "<group>"; };
+		1EB4123F21C4DBDC00EEFECB /* SuperClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperClass.h; sourceTree = "<group>"; };
+		1EB4124021C4DBDC00EEFECB /* SuperClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SuperClass.mm; sourceTree = "<group>"; };
+		1EB4124121C4DBDC00EEFECB /* SubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubClass.h; sourceTree = "<group>"; };
+		1EB4124321C4DBDC00EEFECB /* hello.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hello.m; sourceTree = "<group>"; };
+		1EB4124521C4DBDC00EEFECB /* hello.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hello.h; sourceTree = "<group>"; };
+		1EB4124721C4DBDC00EEFECB /* TestTaggedPointer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTaggedPointer.m; sourceTree = "<group>"; };
+		1EB4124821C4DBDC00EEFECB /* TestTaggedPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTaggedPointer.h; sourceTree = "<group>"; };
+		1EB4124921C4DBDC00EEFECB /* RuntimeDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeDemo.m; sourceTree = "<group>"; };
+		1EB4125B21C4DC0300EEFECB /* KDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDUtil.h; sourceTree = "<group>"; };
+		1EB4125C21C4DC0300EEFECB /* KDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDUtil.m; sourceTree = "<group>"; };
 		1EBA7A04212275C3008F518C /* kd_study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kd_study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EBA7A07212275C3008F518C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1EBA7A08212275C3008F518C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +155,12 @@
 		1EBA7A27212275C4008F518C /* kd_studyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kd_studyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EBA7A2B212275C4008F518C /* kd_studyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kd_studyUITests.m; sourceTree = "<group>"; };
 		1EBA7A2D212275C4008F518C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EBF65A321C73762000D92ED /* RuntimeTest2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeTest2.h; sourceTree = "<group>"; };
+		1EBF65A421C73762000D92ED /* RuntimeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeTest.h; sourceTree = "<group>"; };
+		1EBF65A521C73762000D92ED /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		1EBF65A621C73762000D92ED /* RuntimeTest2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTest2.m; sourceTree = "<group>"; };
+		1EBF65A721C73762000D92ED /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		1EBF65A821C73762000D92ED /* RuntimeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTest.m; sourceTree = "<group>"; };
 		1EDB046F217708EA0039A010 /* RunLoopTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopTest.m; sourceTree = "<group>"; };
 		1EDB0470217708EA0039A010 /* RunLoopTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopTest.h; sourceTree = "<group>"; };
 		1F367A38356B747035017796 /* Pods-kd_study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kd_study.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kd_study/Pods-kd_study.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,13 +219,6 @@
 			path = Te;
 			sourceTree = "<group>";
 		};
-		1E15F8542125209500C9F734 /* runtime */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = runtime;
-			sourceTree = "<group>";
-		};
 		1E1A89282122774B00CD33B5 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,19 +235,6 @@
 				1E1A892B2122776F00CD33B5 /* Hello.swift */,
 			);
 			path = Swift;
-			sourceTree = "<group>";
-		};
-		1E1B0BFC21C54F5D001ED292 /* runtime */ = {
-			isa = PBXGroup;
-			children = (
-				1E1B0BFD21C54F84001ED292 /* RuntimeTest.h */,
-				1E1B0BFE21C54F84001ED292 /* RuntimeTest.m */,
-				1E1B0C0021C561B0001ED292 /* MyClass.h */,
-				1E1B0C0121C561B0001ED292 /* MyClass.m */,
-				1E1B0C0321C6A8D5001ED292 /* RuntimeTest2.h */,
-				1E1B0C0421C6A8D5001ED292 /* RuntimeTest2.m */,
-			);
-			path = runtime;
 			sourceTree = "<group>";
 		};
 		1E4BDF56217B78A4007E23ED /* Copy */ = {
@@ -225,6 +256,80 @@
 				1E8E3C752122ACA4001418E5 /* 2.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1EB4122421C4DBDC00EEFECB /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				1EBF65A221C73762000D92ED /* class */,
+				1EB4125B21C4DC0300EEFECB /* KDUtil.h */,
+				1EB4125C21C4DC0300EEFECB /* KDUtil.m */,
+				1EB4123C21C4DBDC00EEFECB /* RuntimeDemo.h */,
+				1EB4124921C4DBDC00EEFECB /* RuntimeDemo.m */,
+				1EB4122521C4DBDC00EEFECB /* test */,
+				1EB4123D21C4DBDC00EEFECB /* superClass */,
+				1EB4124221C4DBDC00EEFECB /* hello */,
+				1EB4124621C4DBDC00EEFECB /* arc */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		1EB4122521C4DBDC00EEFECB /* test */ = {
+			isa = PBXGroup;
+			children = (
+				1EB4122621C4DBDC00EEFECB /* TestAssociateObj.h */,
+				1EB4122721C4DBDC00EEFECB /* TestMethod.m */,
+				1EB4122821C4DBDC00EEFECB /* TestObjc.h */,
+				1EB4122921C4DBDC00EEFECB /* TestProperty.m */,
+				1EB4122A21C4DBDC00EEFECB /* TestBlock.h */,
+				1EB4122B21C4DBDC00EEFECB /* TestClass.h */,
+				1EB4122C21C4DBDC00EEFECB /* TestLibrary.m */,
+				1EB4122D21C4DBDC00EEFECB /* TestWeak.m */,
+				1EB4122E21C4DBDC00EEFECB /* TestSelector.h */,
+				1EB4122F21C4DBDC00EEFECB /* TestIVar.h */,
+				1EB4123021C4DBDC00EEFECB /* TestProtocol.h */,
+				1EB4123121C4DBDC00EEFECB /* TestMethod.h */,
+				1EB4123221C4DBDC00EEFECB /* TestAssociateObj.m */,
+				1EB4123321C4DBDC00EEFECB /* TestClass.m */,
+				1EB4123421C4DBDC00EEFECB /* TestBlock.m */,
+				1EB4123521C4DBDC00EEFECB /* TestProperty.h */,
+				1EB4123621C4DBDC00EEFECB /* TestObjc.m */,
+				1EB4123721C4DBDC00EEFECB /* TestWeak.h */,
+				1EB4123821C4DBDC00EEFECB /* TestLibrary.h */,
+				1EB4123921C4DBDC00EEFECB /* TestProtocol.m */,
+				1EB4123A21C4DBDC00EEFECB /* TestSelector.m */,
+				1EB4123B21C4DBDC00EEFECB /* TestIVar.m */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		1EB4123D21C4DBDC00EEFECB /* superClass */ = {
+			isa = PBXGroup;
+			children = (
+				1EB4123E21C4DBDC00EEFECB /* SubClass.m */,
+				1EB4123F21C4DBDC00EEFECB /* SuperClass.h */,
+				1EB4124021C4DBDC00EEFECB /* SuperClass.mm */,
+				1EB4124121C4DBDC00EEFECB /* SubClass.h */,
+			);
+			path = superClass;
+			sourceTree = "<group>";
+		};
+		1EB4124221C4DBDC00EEFECB /* hello */ = {
+			isa = PBXGroup;
+			children = (
+				1EB4124321C4DBDC00EEFECB /* hello.m */,
+				1EB4124521C4DBDC00EEFECB /* hello.h */,
+			);
+			path = hello;
+			sourceTree = "<group>";
+		};
+		1EB4124621C4DBDC00EEFECB /* arc */ = {
+			isa = PBXGroup;
+			children = (
+				1EB4124721C4DBDC00EEFECB /* TestTaggedPointer.m */,
+				1EB4124821C4DBDC00EEFECB /* TestTaggedPointer.h */,
+			);
+			path = arc;
 			sourceTree = "<group>";
 		};
 		1EBA79FB212275C3008F518C = {
@@ -252,8 +357,8 @@
 		1EBA7A06212275C3008F518C /* kd_study */ = {
 			isa = PBXGroup;
 			children = (
+				1EB4122421C4DBDC00EEFECB /* runtime */,
 				1EDB046E217708CF0039A010 /* basic */,
-				1E15F8542125209500C9F734 /* runtime */,
 				1E8E3C742122AC74001418E5 /* Resources */,
 				1E1A89282122774B00CD33B5 /* Swift */,
 				1EBA7A07212275C3008F518C /* AppDelegate.h */,
@@ -290,10 +395,22 @@
 			path = kd_studyUITests;
 			sourceTree = "<group>";
 		};
+		1EBF65A221C73762000D92ED /* class */ = {
+			isa = PBXGroup;
+			children = (
+				1EBF65A321C73762000D92ED /* RuntimeTest2.h */,
+				1EBF65A421C73762000D92ED /* RuntimeTest.h */,
+				1EBF65A521C73762000D92ED /* MyClass.h */,
+				1EBF65A621C73762000D92ED /* RuntimeTest2.m */,
+				1EBF65A721C73762000D92ED /* MyClass.m */,
+				1EBF65A821C73762000D92ED /* RuntimeTest.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
 		1EDB046E217708CF0039A010 /* basic */ = {
 			isa = PBXGroup;
 			children = (
-				1E1B0BFC21C54F5D001ED292 /* runtime */,
 				1E068754217B84A70005E4AF /* Archive */,
 				1E4BDF56217B78A4007E23ED /* Copy */,
 				1EDB0470217708EA0039A010 /* RunLoopTest.h */,
@@ -474,6 +591,7 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -487,6 +605,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -559,30 +678,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EB4125521C4DBDC00EEFECB /* SubClass.m in Sources */,
 				1EBA7A0C212275C3008F518C /* ViewController.m in Sources */,
 				1E15F84C21251FCD00C9F734 /* MyView.swift in Sources */,
 				1E15F85321251FCD00C9F734 /* TestOperatorMethod.swift in Sources */,
+				1EBF65AB21C73762000D92ED /* RuntimeTest.m in Sources */,
 				1E4292C5219C275C00B0A825 /* LastResponder.m in Sources */,
-				1E1B0C0221C561B0001ED292 /* MyClass.m in Sources */,
-				1E1B0BFF21C54F84001ED292 /* RuntimeTest.m in Sources */,
 				1E15F84A21251FCD00C9F734 /* TestString.swift in Sources */,
-				1E1B0C0521C6A8D5001ED292 /* RuntimeTest2.m in Sources */,
+				1EB4125021C4DBDC00EEFECB /* TestBlock.m in Sources */,
 				1E15F84D21251FCD00C9F734 /* Hello 2.swift in Sources */,
 				1E15F85021251FCD00C9F734 /* EnumTest.swift in Sources */,
+				1EBF65AA21C73762000D92ED /* MyClass.m in Sources */,
 				1E15F84B21251FCD00C9F734 /* TestProtocol.swift in Sources */,
 				1E4BDF5A217B79A0007E23ED /* CopyTest.m in Sources */,
 				1EBA7A17212275C4008F518C /* main.m in Sources */,
+				1EB4125321C4DBDC00EEFECB /* TestSelector.m in Sources */,
+				1EB4124A21C4DBDC00EEFECB /* TestMethod.m in Sources */,
 				1E0F59EB219BCA150021B979 /* KDLockTest.m in Sources */,
+				1EB4125221C4DBDC00EEFECB /* TestProtocol.m in Sources */,
+				1EB4125621C4DBDC00EEFECB /* SuperClass.mm in Sources */,
+				1EB4124F21C4DBDC00EEFECB /* TestClass.m in Sources */,
 				1E15F84F21251FCD00C9F734 /* MyClass.swift in Sources */,
+				1EB4124C21C4DBDC00EEFECB /* TestLibrary.m in Sources */,
+				1EB4125921C4DBDC00EEFECB /* TestTaggedPointer.m in Sources */,
 				1E6FBD08217741E100876206 /* DispatchTest.m in Sources */,
 				1E15F84E21251FCD00C9F734 /* TestStruct.swift in Sources */,
 				1EDB0471217708EA0039A010 /* RunLoopTest.m in Sources */,
 				1E1A892C2122776F00CD33B5 /* Hello.swift in Sources */,
+				1EB4125D21C4DC0300EEFECB /* KDUtil.m in Sources */,
 				1E15F85221251FCD00C9F734 /* TestMethod.swift in Sources */,
+				1EB4125421C4DBDC00EEFECB /* TestIVar.m in Sources */,
+				1EBF65A921C73762000D92ED /* RuntimeTest2.m in Sources */,
 				1E15F85121251FCD00C9F734 /* RuntimeDemo.swift in Sources */,
+				1EB4124E21C4DBDC00EEFECB /* TestAssociateObj.m in Sources */,
+				1EB4125121C4DBDC00EEFECB /* TestObjc.m in Sources */,
 				1E068757217B84B60005E4AF /* ArchiveTest.m in Sources */,
+				1EB4125721C4DBDC00EEFECB /* hello.m in Sources */,
+				1EB4125A21C4DBDC00EEFECB /* RuntimeDemo.m in Sources */,
 				1E79DAE2219D8A1A00867F1A /* CopyTest+Hello.m in Sources */,
+				1EB4124D21C4DBDC00EEFECB /* TestWeak.m in Sources */,
 				1EBA7A09212275C3008F518C /* AppDelegate.m in Sources */,
+				1EB4124B21C4DBDC00EEFECB /* TestProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
