@@ -22,6 +22,9 @@
 		1E1A892C2122776F00CD33B5 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1A892B2122776F00CD33B5 /* Hello.swift */; };
 		1E3739D221243166002C1352 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3739D121243166002C1352 /* Image.xcassets */; };
 		1E4292C5219C275C00B0A825 /* LastResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4292C4219C275C00B0A825 /* LastResponder.m */; };
+		1E498A6121C792FB007F2E18 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E498A6021C792FB007F2E18 /* 3.png */; };
+		1E498A6421C8925B007F2E18 /* RuntimeDemo+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E498A6321C8925B007F2E18 /* RuntimeDemo+Util.m */; };
+		1E498A6721C8A3EB007F2E18 /* MyView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E498A6621C8A3EB007F2E18 /* MyView1.m */; };
 		1E4BDF5A217B79A0007E23ED /* CopyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BDF59217B79A0007E23ED /* CopyTest.m */; };
 		1E6FBD08217741E100876206 /* DispatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FBD07217741E100876206 /* DispatchTest.m */; };
 		1E79DAE2219D8A1A00867F1A /* CopyTest+Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79DAE1219D8A1A00867F1A /* CopyTest+Hello.m */; };
@@ -97,6 +100,11 @@
 		1E3739D121243166002C1352 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		1E4292C3219C275C00B0A825 /* LastResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastResponder.h; sourceTree = "<group>"; };
 		1E4292C4219C275C00B0A825 /* LastResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastResponder.m; sourceTree = "<group>"; };
+		1E498A6021C792FB007F2E18 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		1E498A6221C8925B007F2E18 /* RuntimeDemo+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimeDemo+Util.h"; sourceTree = "<group>"; };
+		1E498A6321C8925B007F2E18 /* RuntimeDemo+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RuntimeDemo+Util.m"; sourceTree = "<group>"; };
+		1E498A6521C8A3EB007F2E18 /* MyView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyView1.h; sourceTree = "<group>"; };
+		1E498A6621C8A3EB007F2E18 /* MyView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyView1.m; sourceTree = "<group>"; };
 		1E4BDF57217B78C6007E23ED /* learn-copy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "learn-copy.md"; sourceTree = "<group>"; };
 		1E4BDF58217B79A0007E23ED /* CopyTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyTest.h; sourceTree = "<group>"; };
 		1E4BDF59217B79A0007E23ED /* CopyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyTest.m; sourceTree = "<group>"; };
@@ -237,6 +245,15 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
+		1E498A5F21C77CE0007F2E18 /* gcd */ = {
+			isa = PBXGroup;
+			children = (
+				1E6FBD06217741E100876206 /* DispatchTest.h */,
+				1E6FBD07217741E100876206 /* DispatchTest.m */,
+			);
+			path = gcd;
+			sourceTree = "<group>";
+		};
 		1E4BDF56217B78A4007E23ED /* Copy */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +269,7 @@
 		1E8E3C742122AC74001418E5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E498A6021C792FB007F2E18 /* 3.png */,
 				1E3739D121243166002C1352 /* Image.xcassets */,
 				1E8E3C752122ACA4001418E5 /* 2.png */,
 			);
@@ -261,11 +279,13 @@
 		1EB4122421C4DBDC00EEFECB /* runtime */ = {
 			isa = PBXGroup;
 			children = (
-				1EBF65A221C73762000D92ED /* class */,
 				1EB4125B21C4DC0300EEFECB /* KDUtil.h */,
 				1EB4125C21C4DC0300EEFECB /* KDUtil.m */,
 				1EB4123C21C4DBDC00EEFECB /* RuntimeDemo.h */,
 				1EB4124921C4DBDC00EEFECB /* RuntimeDemo.m */,
+				1E498A6221C8925B007F2E18 /* RuntimeDemo+Util.h */,
+				1E498A6321C8925B007F2E18 /* RuntimeDemo+Util.m */,
+				1EBF65A221C73762000D92ED /* class */,
 				1EB4122521C4DBDC00EEFECB /* test */,
 				1EB4123D21C4DBDC00EEFECB /* superClass */,
 				1EB4124221C4DBDC00EEFECB /* hello */,
@@ -357,6 +377,7 @@
 		1EBA7A06212275C3008F518C /* kd_study */ = {
 			isa = PBXGroup;
 			children = (
+				1EBF65AC21C7746B000D92ED /* ui */,
 				1EB4122421C4DBDC00EEFECB /* runtime */,
 				1EDB046E217708CF0039A010 /* basic */,
 				1E8E3C742122AC74001418E5 /* Resources */,
@@ -408,15 +429,23 @@
 			path = class;
 			sourceTree = "<group>";
 		};
+		1EBF65AC21C7746B000D92ED /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				1E498A6521C8A3EB007F2E18 /* MyView1.h */,
+				1E498A6621C8A3EB007F2E18 /* MyView1.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
 		1EDB046E217708CF0039A010 /* basic */ = {
 			isa = PBXGroup;
 			children = (
+				1E498A5F21C77CE0007F2E18 /* gcd */,
 				1E068754217B84A70005E4AF /* Archive */,
 				1E4BDF56217B78A4007E23ED /* Copy */,
 				1EDB0470217708EA0039A010 /* RunLoopTest.h */,
 				1EDB046F217708EA0039A010 /* RunLoopTest.m */,
-				1E6FBD06217741E100876206 /* DispatchTest.h */,
-				1E6FBD07217741E100876206 /* DispatchTest.m */,
 				1E0F59E9219BCA150021B979 /* KDLockTest.h */,
 				1E0F59EA219BCA150021B979 /* KDLockTest.m */,
 			);
@@ -557,6 +586,7 @@
 				1EBA7A14212275C4008F518C /* LaunchScreen.storyboard in Resources */,
 				1EBA7A11212275C4008F518C /* Assets.xcassets in Resources */,
 				1E3739D221243166002C1352 /* Image.xcassets in Resources */,
+				1E498A6121C792FB007F2E18 /* 3.png in Resources */,
 				1E8E3C762122ACA4001418E5 /* 2.png in Resources */,
 				1EBA7A0F212275C3008F518C /* Main.storyboard in Resources */,
 			);
@@ -590,11 +620,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-kd_study/Pods-kd_study-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
@@ -604,11 +636,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
@@ -687,8 +721,10 @@
 				1E15F84A21251FCD00C9F734 /* TestString.swift in Sources */,
 				1EB4125021C4DBDC00EEFECB /* TestBlock.m in Sources */,
 				1E15F84D21251FCD00C9F734 /* Hello 2.swift in Sources */,
+				1E498A6421C8925B007F2E18 /* RuntimeDemo+Util.m in Sources */,
 				1E15F85021251FCD00C9F734 /* EnumTest.swift in Sources */,
 				1EBF65AA21C73762000D92ED /* MyClass.m in Sources */,
+				1E498A6721C8A3EB007F2E18 /* MyView1.m in Sources */,
 				1E15F84B21251FCD00C9F734 /* TestProtocol.swift in Sources */,
 				1E4BDF5A217B79A0007E23ED /* CopyTest.m in Sources */,
 				1EBA7A17212275C4008F518C /* main.m in Sources */,

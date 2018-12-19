@@ -29,10 +29,12 @@
 
 @implementation RuntimeDemo
 
++ (void)initialize {
+    NSLog(@"initialize class");
+}
+
 + (void)test {
-    //
-    
-    [Hello test];
+//    [Hello test];
     
 //    NSString *str = [NSMutableString stringWithFormat:@"111"];
     //    [TestLibrary test];
@@ -44,9 +46,10 @@
 //    [TestObjc test];
 //    [TestClass test];
     
-    [TestBlock test];
-    
+//    [TestBlock test];
+//
 //    RuntimeDemo *demo = [[RuntimeDemo alloc] init];
+//    [demo hello];
 //    SubClass *sub = [[SubClass alloc] init];
     
 //    SEL hello = @selector(hello);
@@ -64,15 +67,15 @@
     Class class = object_getClass(self);
     const char *class_name = object_getClassName(self);
     
-//    object_get
-    
-    
-//    object_copy(self, 0);   // 拷贝obj
-//    object_
+    // object_copy(self, 0);   // 拷贝obj
     
     // 发消息
 //    objc_msgSend(target, selector, args)//     发消息
 //    objc_msgSendSuper();  给父类发消息
+}
+
+- (void)hello {
+    NSLog(@"hello class");
 }
 
 - (void)testClass {

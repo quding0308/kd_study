@@ -16,7 +16,8 @@
     DispatchTest *test = [[DispatchTest alloc] init];
     
 //    [test qdSemaphore];
-    [test qdGroup];
+//    [test qdGroup];
+    [test qdGCDPriority];
 }
 
 /*
@@ -92,8 +93,67 @@
     }];
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 1), ^{
 //    });
+}
+
+- (void)qdGCDPriority {
+    // dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
+    
+    // global queue 优先级
+    /*
+    #define DISPATCH_QUEUE_PRIORITY_HIGH 2
+    #define DISPATCH_QUEUE_PRIORITY_DEFAULT 0
+    #define DISPATCH_QUEUE_PRIORITY_LOW (-2)
+    #define DISPATCH_QUEUE_PRIORITY_BACKGROUND INT16_MIN
+     
+     * See dispatch_queue_global_t.
+     *
+     * @param identifier
+     * A quality of service class defined in qos_class_t or a priority defined in
+     * dispatch_queue_priority_t.
+     *
+     * It is recommended to use quality of service class values to identify the
+     * well-known global concurrent queues:
+     *  - QOS_CLASS_USER_INTERACTIVE
+     *  - QOS_CLASS_USER_INITIATED
+     *  - QOS_CLASS_DEFAULT
+     *  - QOS_CLASS_UTILITY
+     *  - QOS_CLASS_BACKGROUND
+     *
+     * The global concurrent queues may still be identified by their priority,
+     * which map to the following QOS classes:
+     *  - DISPATCH_QUEUE_PRIORITY_HIGH:         QOS_CLASS_USER_INITIATED
+     *  - DISPATCH_QUEUE_PRIORITY_DEFAULT:      QOS_CLASS_DEFAULT
+     *  - DISPATCH_QUEUE_PRIORITY_LOW:          QOS_CLASS_UTILITY
+     *  - DISPATCH_QUEUE_PRIORITY_BACKGROUND:   QOS_CLASS_BACKGROUND
+     *
+     
+     // 与用户交互的优先级
+     QOS_CLASS_USER_INTERACTIVE
+     
+     // 用户发起的服务，等待结果
+     QOS_CLASS_USER_INITIATED
+     
+     // 默认优先级
+     QOS_CLASS_DEFAULT
+     
+     // 用户不太关心任务的进度，但需要知道结果
+     QOS_CLASS_UTILITY
+     // 后台加载
+     QOS_CLASS_BACKGROUND
+    */
+     
+    dispatch_queue_global_t gQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     
+    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
+    
+    // 指定优先级创建队列
+    dispatch_queue_t queue1;
+    dispatch_queue_attr_t attr1;
+    attr1 = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL,
+                                                   QOS_CLASS_UTILITY, 0);
+    queue1 = dispatch_queue_create("com.example.myqueue", attr1);
+    NSLog(@"");
 }
 
 @end

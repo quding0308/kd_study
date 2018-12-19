@@ -10,7 +10,7 @@
 
 #import "LastResponder.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <UITableViewDelegate>
 
 @end
 

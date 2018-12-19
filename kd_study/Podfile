@@ -15,6 +15,10 @@ target 'kd_study' do
 
     pod 'pop', '~> 1.0.10'
 
+    pod 'SDWebImage'
+    pod 'SDWebImage/GIF'
+    
+    
   target 'kd_studyTests' do
     inherit! :search_paths
     # Pods for testing
