@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+//extern int const Age;
+
+extern const NSString *Name;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HelloWorld : NSObject

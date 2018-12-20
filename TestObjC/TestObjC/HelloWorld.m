@@ -8,9 +8,13 @@
 
 #import "HelloWorld.h"
 
+//int const Age = 23;
+
+const NSString *Name = @"Peter";
+
 @implementation HelloWorld
 
 - (void)hello {
-    NSLog(@"HelloWorld");
+    NSLog(@"HelloWorld1");
 }
 @end
