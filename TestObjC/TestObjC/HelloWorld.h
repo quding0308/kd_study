@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HelloWorld : NSObject
 
-- (void)hello;
+- (void)hello1;
 
 @end
 

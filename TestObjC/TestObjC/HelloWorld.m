@@ -14,7 +14,7 @@ const NSString *Name = @"Peter";
 
 @implementation HelloWorld
 
-- (void)hello {
+- (void)hello1 {
     NSLog(@"HelloWorld1");
 }
 @end

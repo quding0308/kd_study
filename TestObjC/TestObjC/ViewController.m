@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "TestObjC-Swift.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    MyClass *myclass = [[MyClass alloc] init];
+    [myclass hello];
+    
+    test();
+    
+    
+//    [[[HelloSwift alloc] init] helloSwift];
 }
 
 
@@ -29,3 +39,11 @@
 }
 
 @end
+
+
+
+static void test(void) {
+    
+    
+    
+}

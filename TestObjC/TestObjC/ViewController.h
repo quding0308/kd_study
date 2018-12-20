@@ -18,3 +18,6 @@
 - (void)hello;
 
 @end
+
+//static void test(void);
+static void test(void);
