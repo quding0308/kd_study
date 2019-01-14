@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E17590621D3116E0056A39F /* Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E17590521D3116E0056A39F /* Hello.m */; };
 		1E1F160F21AF8EF700A8CDF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1F160E21AF8EF700A8CDF1 /* AppDelegate.m */; };
 		1E1F161221AF8EF700A8CDF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1F161121AF8EF700A8CDF1 /* ViewController.m */; };
 		1E1F161521AF8EF700A8CDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1F161321AF8EF700A8CDF1 /* Main.storyboard */; };
@@ -16,10 +17,13 @@
 		1E1F162521AF8F1500A8CDF1 /* test_c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E1F162421AF8F1500A8CDF1 /* test_c.cc */; };
 		1E53FD6521CA546000466FAA /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E53FD6421CA546000466FAA /* HelloWorld.m */; };
 		1E53FD6721CA549A00466FAA /* HelloTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E53FD6621CA549A00466FAA /* HelloTest.m */; };
+		1EA08B5621D48A3100C4B0C8 /* TimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA08B5521D48A3100C4B0C8 /* TimeHelper.m */; };
 		1EAFAA4B21CA9D7200932268 /* HelloSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAFAA4A21CA9D7200932268 /* HelloSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E17590421D3116E0056A39F /* Hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hello.h; sourceTree = "<group>"; };
+		1E17590521D3116E0056A39F /* Hello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hello.m; sourceTree = "<group>"; };
 		1E1F160A21AF8EF700A8CDF1 /* TestObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E1F160D21AF8EF700A8CDF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1E1F160E21AF8EF700A8CDF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +39,8 @@
 		1E53FD6321CA546000466FAA /* HelloWorld.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
 		1E53FD6421CA546000466FAA /* HelloWorld.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
 		1E53FD6621CA549A00466FAA /* HelloTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloTest.m; sourceTree = "<group>"; };
+		1EA08B5421D48A3100C4B0C8 /* TimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeHelper.h; sourceTree = "<group>"; };
+		1EA08B5521D48A3100C4B0C8 /* TimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeHelper.m; sourceTree = "<group>"; };
 		1EAFAA4921CA9D7200932268 /* TestObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestObjC-Bridging-Header.h"; sourceTree = "<group>"; };
 		1EAFAA4A21CA9D7200932268 /* HelloSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +91,10 @@
 				1E53FD6621CA549A00466FAA /* HelloTest.m */,
 				1EAFAA4A21CA9D7200932268 /* HelloSwift.swift */,
 				1EAFAA4921CA9D7200932268 /* TestObjC-Bridging-Header.h */,
+				1E17590421D3116E0056A39F /* Hello.h */,
+				1E17590521D3116E0056A39F /* Hello.m */,
+				1EA08B5421D48A3100C4B0C8 /* TimeHelper.h */,
+				1EA08B5521D48A3100C4B0C8 /* TimeHelper.m */,
 			);
 			path = TestObjC;
 			sourceTree = "<group>";
@@ -165,7 +175,9 @@
 				1E1F161D21AF8EF800A8CDF1 /* main.m in Sources */,
 				1EAFAA4B21CA9D7200932268 /* HelloSwift.swift in Sources */,
 				1E1F160F21AF8EF700A8CDF1 /* AppDelegate.m in Sources */,
+				1EA08B5621D48A3100C4B0C8 /* TimeHelper.m in Sources */,
 				1E53FD6721CA549A00466FAA /* HelloTest.m in Sources */,
+				1E17590621D3116E0056A39F /* Hello.m in Sources */,
 				1E1F162521AF8F1500A8CDF1 /* test_c.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

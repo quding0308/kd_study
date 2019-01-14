@@ -7,6 +7,10 @@
 //
 
 #import "KDLockTest.h"
+
+void hello(int * _Nullable);
+
+#import <pthread.h>
 /*
  
  对于 NSLock 及其子类，速度来说 NSLock < NSCondition < NSRecursiveLock < NSConditionLock 。
@@ -19,9 +23,14 @@
 //    [test testLock];
     [test testRecursiveLock];
 //    [test testCondition];
+
 }
 
 - (void)testLock {
+    
+    pthread_mutex_t _lock;
+    pthread_mutex_init(&_lock, NULL);
+
     /*
      NSLock
         为全局资源加锁

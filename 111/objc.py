@@ -34,7 +34,7 @@ def verified_macho_path(args):
     if not s.startswith('Mach-O'):
         return None
     
-    return path
+    return pathq
 
 def signature_cmp(m1, m2):
     cls1 = m1[2:].split(' ')[0]

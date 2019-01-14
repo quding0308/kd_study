@@ -10,19 +10,106 @@
 
 #import <UIKit/UIKit.h>
 
+#import <objc/runtime.h>
+#import <objc/message.h>
+
 #include <math.h>
 #include <stdio.h>
 #include <limits.h>
 //
 
+void hello(void);
+
 static CFRunLoopSourceRef _source;
+
+@interface RunLoopTest () <NSMachPortDelegate> {
+    NSThread *_thread;
+    NSMachPort *_machPort;
+    NSRunLoop *_runloop;
+    
+    NSTimer *_timer;
+}
+
+@end
 
 @implementation RunLoopTest
 
+#pragma mark - NSMachPortDelegate
+- (void)handleMachMessage:(void *)msg {
+    NSLog(@"");
+}
+
+void hello(void) {
+    //
+    
+    
+}
+
 + (void)test {
+//    kCFRunLoopDefaultMode
+    
+    id obj = [[RunLoopTest alloc] init];
+    [obj testThread];
+}
+
+- (void)testThread {
+    _thread = [[NSThread alloc] initWithTarget:self selector:@selector(threadRun) object:nil];
+    [_thread start];
+    
+    __weak __typeof (self) weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        BOOL *executing = _thread.isExecuting;
+        BOOL isMainThread = [_thread isMainThread];
+        NSLog(@"=== %i", executing);
+        
+//        [_machPort send];
+        
+        // 直接发消息执行
+        [self performSelector:@selector(msgReceive:) onThread:_thread withObject:@{@"key2":@"value2"} waitUntilDone:YES];
+        [_machPort sendBeforeDate:NSDate.date msgid:0 components:nil from:nil reserved:0];
+
+    });
+    
+    [self performSelector:@selector(msgReceive:) onThread:_thread withObject:@{@"key1":@"value1"} waitUntilDone:YES];
     
     
+    _timer = [NSTimer timerWithTimeInterval:3 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        NSLog(@"=== timer");
+        
+    }];
     
+//    [_runloop addTimer:_timer forMode:NSDefaultRunLoopMode];
+    
+//        [_timer fire];
+}
+
+- (void)threadRun {
+    NSLog(@"");
+    BOOL *executing = _thread.isExecuting;
+    BOOL isMainThread = [_thread isMainThread];
+    NSLog(@"=== %i", executing);
+    
+    NSRunLoop *loop = [NSRunLoop currentRunLoop];
+    _runloop = loop;
+    
+    [self setupObserver:loop];
+    
+    NSMachPort *port = (NSMachPort *)[NSMachPort port];
+    [port setDelegate:self];
+    [loop addPort:port forMode:NSDefaultRunLoopMode];
+//    [port scheduleInRunLoop:loop forMode:NSRunLoopCommonModes];
+    [loop runUntilDate:NSDate.distantFuture];
+    
+    
+//    [self performSelector:@selector(msgReceive:) withObject:@{@"key1":@"value1"}];
+    
+//    [self performSelector:@selector(msgReceive:) onThread:_thread withObject:@{@"key1":@"value"} waitUntilDone:NO];
+//    [self performSelector:@selector(msgReceive:) onThread:_thread withObject:@{@"key1":@"value1"} waitUntilDone:YES];
+//    [self performSelector:@selector(msgReceive:) withObject:@{@"key1":@"value1"} afterDelay:1];
+}
+
+- (void)msgReceive:(id)obj {
+    NSLog(@"=== %@", obj);
 }
 
 //static CFDataRef Callback(CFMessagePortRef port,
@@ -32,17 +119,6 @@ static CFRunLoopSourceRef _source;
 //    NSLog(@"");
 //}
 
-- (void)test {
-    
-    // Do any additional setup after loading the view, typically from a nib.
-    CFRunLoopRef loop = CFRunLoopGetMain();
-    CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(NULL, kCFRunLoopBeforeSources, true, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
-        NSLog(@"observer %lu", activity);
-    });
-    CFRunLoopAddObserver(loop, observer, kCFRunLoopCommonModes);
-    
-    
-}
 
 /**
  RunLoopMode
@@ -217,8 +293,47 @@ static void Callback() {
 //    CFRunLoopRemoveSource(<#CFRunLoopRef rl#>, <#CFRunLoopSourceRef source#>, <#CFRunLoopMode mode#>)
 //    CFRunLoopRemoveObserver(<#CFRunLoopRef rl#>, <#CFRunLoopObserverRef observer#>, <#CFRunLoopMode mode#>)
 //
-    
-    
+}
+
+- (void)setupObserver:(NSRunLoop *)runloop {
+    [self setupObserverRef:runloop.getCFRunLoop];
+}
+
+/*
+ typedef CF_OPTIONS(CFOptionFlags, CFRunLoopActivity) {
+ 1 kCFRunLoopEntry = (1UL << 0),
+ 2 kCFRunLoopBeforeTimers = (1UL << 1),
+ 4 kCFRunLoopBeforeSources = (1UL << 2),
+ 18 kCFRunLoopBeforeWaiting = (1UL << 5),
+ kCFRunLoopAfterWaiting = (1UL << 6),
+ kCFRunLoopExit = (1UL << 7),
+ kCFRunLoopAllActivities = 0x0FFFFFFFU
+ };
+ */
+- (void)setupObserverRef:(CFRunLoopRef)runloopRef {
+    CFRunLoopObserverRef observer =
+        CFRunLoopObserverCreateWithHandler(NULL,
+                                           kCFRunLoopEntry | kCFRunLoopBeforeTimers | kCFRunLoopBeforeSources | kCFRunLoopBeforeWaiting | kCFRunLoopAfterWaiting | kCFRunLoopExit,
+                                           true,
+                                           0,
+                                           ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
+        if ((activity & 1) == 1) {
+            NSLog(@"=== observer %lu kCFRunLoopEntry", activity);
+        } else if (((activity >> 1) & 1) == 1) {
+            NSLog(@"=== observer %lu kCFRunLoopBeforeTimers", activity);
+        }  else if (((activity >> 2) & 1) == 1) {
+            NSLog(@"=== observer %lu kCFRunLoopBeforeSources", activity);
+        }  else if (((activity >> 5) & 1) == 1) {
+            NSLog(@"=== observer %lu kCFRunLoopBeforeWaiting", activity);
+        }  else if (((activity >> 6) & 1) == 1) {
+            NSLog(@"=== observer %lu kCFRunLoopAfterWaiting", activity);
+        }  else if (((activity >> 7) & 1) == 1) {
+            NSLog(@"=== observer %lu kCFRunLoopExit", activity);
+        } else {
+            NSLog(@"=== observer %lu kCFRunLoopAllActivities", activity);
+        }
+    });
+    CFRunLoopAddObserver(runloopRef, observer, kCFRunLoopCommonModes);
 }
 
 @end

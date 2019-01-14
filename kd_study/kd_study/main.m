@@ -11,13 +11,20 @@
 #import "KDLockTest.h"
 #import "RuntimeTest.h"
 #import "RuntimeTest2.h"
+#import "RunLoopTest.h"
 
+int f(int * _Nullable restrict, int * _Nullable restrict);
 
 int main(int argc, char * argv[]) {
+    int a = 10;
+    int b = 9;
+    int c = f(&a, &a);
+    
     @autoreleasepool {
 //        [[[NSObject alloc] init] isKindOfClass:RuntimeTest.class];
 //        [RuntimeTest test3];
-        [RuntimeTest2 test];
+//        [RuntimeTest2 test];
+        [RunLoopTest test];
 
         NSArray *a = [NSMutableArray arrayWithObjects:@"224", @"223", nil];
         NSArray *b = [NSMutableArray arrayWithObjects:@"223", @"224", nil];
@@ -51,6 +58,13 @@ int main(int argc, char * argv[]) {
     }
 }
 
+
+int f(int * _Nullable restrict x, int * _Nullable restrict y) {
+    *x = 0;
+    *y = 1;
+    
+    return *x;
+}
 
 @implementation NSString (util)
 

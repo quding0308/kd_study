@@ -10,15 +10,29 @@
 
 #import "TestObjC-Swift.h"
 
+#import "Hello.h"
+
+#import "TimeHelper.h"
+
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
 
++ (void)load {
+    NSLog(@"");
+}
+
++ (void)initialize {
+    NSLog(@"");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [TimeHelper test];
     
     MyClass *myclass = [[MyClass alloc] init];
     [myclass hello];
@@ -27,6 +41,8 @@
     
     
 //    [[[HelloSwift alloc] init] helloSwift];
+    
+    BOOL flag = [Hello isKindOfClass:[NSString class]];
 }
 
 
