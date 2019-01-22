@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html onload="htmlOnload()">
+	<head>
+		<title>Title</title>
+		<meta charset="UTF-8"/>
+
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/test.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			window.onload = function() {
+				console.log("window onload");
+			}
+			
+			console.log(document.readyState);
+			document.onreadystatechange = function(dom, event) {
+				console.log("onreadystatechange");
+				console.log(document.readyState);
+            }
+            
+        </script>>
+
+		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+    </head>
+    
+	<body >
+        <div class="view_port">
+            <div class="polling_message">
+                Listening for dispatches
+            </div>
+            <div class="cylon_eye"></div>
+        </div>
+
+		<div>
+			<button type="button" onclick="loadXMLDoc()">button get</button>
+			<br />
+			<button type="button" onclick="loadXMLDocPost()">button post</button>
+			<br />
+			<button type="button" onclick="finishLesson()">button test</button>
+        </div>
+        
+        <p>221p</p>
+        <p class="class-font">你好1143 hello world</p>
+
+        <div>
+            <img src="./img/HBuilder.png" alt="">
+        </div>
+		
+        <div>
+            <p>unordered list</p>
+            <ul>
+                <li>11</li>
+                <li>22</li>
+            </ul>
+
+            <p>ordered list</p>
+            <ol>
+                <li>11</li>
+                <li>22</li>
+            </ol>
+
+            <p>dl</p>
+            <dl>
+                <dt>humous</dt>
+                <dd>12345</dd>
+                <dt>humous</dt>
+                <dd>12345</dd>
+            </dl>
+            </div>
+
+	</body>
+</html>

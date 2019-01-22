@@ -1,0 +1,45 @@
+
+html{
+    background-color: gray;
+}
+body{
+    text-align: center;
+    -webkit-user-select: none;
+    background-color: gray;
+}
+input[type=button]{
+    width: 90px;
+}
+
+dt::after {
+    content: ":";
+}
+
+#d1{
+    font-family: "微软雅黑";
+    background-image: url(img/HBuilder.png)
+}
+div{
+    background: white
+}
+
+button, p {
+    font-size: 1.5em;
+    color: #ff00ff;
+    opacity: 0.8;
+    width: 1200px;
+
+    background-color: aqua;
+}
+
+quding {
+    margin: 10px;
+    background-color: yellowgreen;
+    display: block;
+}
+
+.baidu {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+}

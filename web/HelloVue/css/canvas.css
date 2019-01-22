@@ -1,0 +1,15 @@
+
+html{
+    background-color: gray;
+}
+body{
+    text-align: center;
+    -webkit-user-select: none;
+    background-color: gray;
+}
+
+#mycanvas {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+}

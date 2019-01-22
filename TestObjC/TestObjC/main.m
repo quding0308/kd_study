@@ -14,13 +14,9 @@
 #import <math.h>
 #import <semaphore.h>
 
+static void *kStaticKey = &kStaticKey;
+
 NSString* (*fp)(void);
-
-/*
-NSString *name() {
-    return @"";
-}*/
-
 
 NSString *name(void) {
     return ({
@@ -28,45 +24,26 @@ NSString *name(void) {
     });
 }
 
+static NSObject *weakObj;
+static id __weak weakObj1;
 
 int main(int argc, char * argv[]) {
-    float_t a = 10, b = 20;
-    int r1 = isgreater(a, b);
+    printf("%@", kStaticKey);
     
-    double r2 = log2(8);
+    NSObject *obj = [[NSObject alloc] init];
     
-    
-    sem_t *sem = sem_open("sem_1", 0);
-    
-    int r4 = sem_post(sem);
-    
-    r4 = sem_wait(sem);
-    
-    r4 = sem_wait(sem);
-    
-    
-    fp = name;
-    NSString *result = fp();
+    weakObj = obj;
+    weakObj1 = weakObj;
+    NSLog(@"%@", weakObj);
+    NSLog(@"=== %@", weakObj1);
 
-    name();
-    
-//    @autoreleasepool {
-        ({
-            double a = 1.999;
-            int b = a;
-            float c = a;
-        });
-        
-        printf("end");
-//        printf("%ld", a);
-        
-        ({
-            double a = 1.999;
-            int b = a;
-            float c = a;
-        });
-        
-//        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-//    }
+    obj = nil;
+    weakObj = [[NSObject alloc] init];
+    NSLog(@"%@", weakObj);
+    NSLog(@"=== %@", weakObj1);
+
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
     return 0;
 }

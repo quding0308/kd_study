@@ -1,0 +1,139 @@
+
+html{
+    background-color: gray;
+}
+body{
+    text-align: center;
+    -webkit-user-select: none;
+    background-color: gray;
+}
+input[type=button]{
+    width: 90px;
+}
+
+dt::after {
+    content: ":";
+}
+
+#d1{
+    font-family: "微软雅黑";
+    background-image: url(img/HBuilder.png)
+}
+div{
+    background: white
+}
+
+button, p {
+    font-size: 1.5em;
+    color: #ff00ff;
+    opacity: 0.8;
+    width: 1200px;
+
+    background-color: aqua;
+}
+
+.class-font {
+    color: red;
+    font-family: -apple-system;
+    
+    /* 1em 等于 当前元素的父元素上设置的字体大小 */
+    font-size: 2.5em;   
+    
+    /* font-style: normal; */
+    font-style: italic;
+    
+    /* font-weight: normal; */
+    font-weight: bold;
+
+    /* text-decoration: none; */
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    text-decoration: line-through;
+
+    /* text-transform: none; */
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+
+    /* 水平偏移 垂直偏移 模糊半径 阴影颜色 */
+    text-shadow: 4px 4px 5px red;
+
+    /* 文本布局 */
+    /* 对齐方式 */
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: center; */
+    text-align: justify;
+
+    /* 行高 2.5为乘数 */
+    line-height: 2.5;
+
+    /* 字间距 */
+    letter-spacing: 10px;
+
+    /* 单词间距 */
+    word-spacing: 50px;
+}
+
+p {
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+.polling_message {
+    color:white;
+    float:left;
+    margin-right:2%;            
+  }
+  
+  .view_port {
+    background-color:black;
+    height:25px;
+    width:100%;
+    overflow: hidden;
+  }
+  
+  .cylon_eye {
+    color:white;
+    height: 100%;
+    width: 20%;
+  
+    background-color: red;
+    background-image: -webkit-linear-gradient(left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:    -moz-linear-gradient(left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:     -ms-linear-gradient(left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:      -o-linear-gradient(left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:         linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+  
+    -webkit-animation: move_eye 4s linear 0s infinite alternate;
+       -moz-animation: move_eye 4s linear 0s infinite alternate;
+         -o-animation: move_eye 4s linear 0s infinite alternate;
+            animation: move_eye 4s linear 0s infinite alternate;
+  }
+  
+  @-webkit-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+     @-moz-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+       @-o-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+          @keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<title>vue</title>
+		<meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/vue.css"/>
+	
+		<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <!-- 生产环境版本，优化了尺寸和速度 -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+	</head>
+	<body >
+        <!-- 数据驱动UI -->
+        <div>
+            <div id="app">
+                    {{ message }}
+                </div>
+        
+                <!-- 这个元素的title与Vue实例中的message属性保持一致 -->
+                <div id="app-2">
+                    <span v-bind:title="message">11</span>
+                </div>
+        
+                <!-- if -->
+                <div id="app-3">
+                    <p v-if="seen">if内容</p>
+                </div>
+        
+                <!-- for -->
+                <div id="app-4">
+                    <ol>
+                        <li v-for="todo in todos">
+                            {{todo.text}}
+                        </li>
+                    </ol>
+                </div>
+        </div>
+
+        <!-- 响应事件 -->
+        <div>
+            <div id="app-5">
+                <p>{{ message }}</p>
+                <button v-on:click="reverseMessage">按钮</button>
+            </div>
+
+            <!-- vmodel 表单和应用状态之间实现双向绑定 -->
+            <div id="app-6">
+                <p>{{message}}</p>
+                <input v-model="message">
+            </div>
+        </div>
+
+        <!-- 组件 -->
+        <div id="app-7">
+            <ol>
+                <todo-item 
+                    v-for="item in list"
+                    v-bind:todo="item"
+                    v-bind:key="item.id" >
+                </todo-item>
+            </ol>
+        </div>
+
+        <!-- 状态管理 -->
+        <div id="app-8">
+            <p>{{ message }}</p>
+        </div>
+        <div id="app-9">
+            <p>{{ message }}</p>
+        </div>
+
+        <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
