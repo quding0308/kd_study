@@ -1,4 +1,0 @@
-
-export funciton app() {
-    
-}
