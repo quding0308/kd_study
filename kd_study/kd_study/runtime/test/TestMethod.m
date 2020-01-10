@@ -22,12 +22,17 @@
  
  
  */
+
+void hello_new() {
+    NSLog(@"hello_new");
+}
+
 @implementation TestMethod
 
 + (void)test {
     Class cls = NSClassFromString(@"TestMethod");
     SEL selector = @selector(hello);
-//    Method m = class_getClassMethod(cls, selector);
+//    SEL selector = @selector(hello1:);
     Method m = class_getInstanceMethod(cls, selector);
     
     SEL sel = method_getName(m);
@@ -35,8 +40,10 @@
     
     IMP imp = method_getImplementation(m);
     
-    const char *typeEncoding = method_getTypeEncoding(m);
     
+    //    "v16@0:8"
+    //    "v24@0:8@16"
+    const char *typeEncoding = method_getTypeEncoding(m);
     const char *returnType = method_copyReturnType(m);
     
     unsigned int argsCount =  method_getNumberOfArguments(m);
@@ -54,22 +61,32 @@
     struct objc_method_description *des = method_getDescription(m);
     
     
+    /// set or exchange
+//    method_setImplementation(m, hello_new);
     
-    TestMethod *obj = [[TestMethod alloc] init];
     
-    // invoke call the IMP
+    
+    
+    /// invoke call the IMP
     //   id returnValue = method_invoke();
     //    method_invoke(obj, m, "dd");
     
     SEL selector2 = @selector(hello2);
     Method m2 = class_getInstanceMethod(cls, selector2);
     method_exchangeImplementations(m, m2);
+    TestMethod *obj = [[TestMethod alloc] init];
     [obj hello];
     [obj hello2];
     
     method_setImplementation(m, class_getMethodImplementation(cls, @selector(helloPeter)));
-    [obj hello];
-    [obj hello2];
+    TestMethod *obj1 = [[TestMethod alloc] init];
+    [obj1 hello];
+    [obj1 hello2];
+    
+//    method_exchangeImplementations(m, m2);
+//    TestMethod *obj = [[TestMethod alloc] init];
+//    [obj hello];
+//    [obj hello2];
     
 //    class_replaceMethod([self class], @selector(hello), <#IMP  _Nonnull imp#>, nil)
     

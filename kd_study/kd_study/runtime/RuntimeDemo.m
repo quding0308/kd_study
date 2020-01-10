@@ -50,12 +50,12 @@
 //
 //    RuntimeDemo *demo = [[RuntimeDemo alloc] init];
 //    [demo hello];
-//    SubClass *sub = [[SubClass alloc] init];
+    SubClass *sub = [[SubClass alloc] init];
     
-//    SEL hello = @selector(hello);
-//    [sub performSelector:hello];
-//    SEL helloStatic = @selector(helloStatic);
-//    [[SubClass class] performSelector:helloStatic];
+    SEL hello = @selector(hello);
+    [sub performSelector:hello];
+    SEL helloStatic = @selector(helloStatic);
+    [[SubClass class] performSelector:helloStatic];
     
 //    [demo aboutClass];
 //    [demo runtimeConstruct];

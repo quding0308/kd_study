@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        NSLog(@"没有响应这个时间");
+//        NSLog(@"没有响应这个时间");
     }
     return self;
 }

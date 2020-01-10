@@ -17,7 +17,7 @@
 		1E15F84F21251FCD00C9F734 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84521251FCC00C9F734 /* MyClass.swift */; };
 		1E15F85021251FCD00C9F734 /* EnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84621251FCC00C9F734 /* EnumTest.swift */; };
 		1E15F85121251FCD00C9F734 /* RuntimeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84721251FCD00C9F734 /* RuntimeDemo.swift */; };
-		1E15F85221251FCD00C9F734 /* TestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84821251FCD00C9F734 /* TestMethod.swift */; };
+		1E15F85221251FCD00C9F734 /* TestMethod1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84821251FCD00C9F734 /* TestMethod1.swift */; };
 		1E15F85321251FCD00C9F734 /* TestOperatorMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */; };
 		1E1A892C2122776F00CD33B5 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1A892B2122776F00CD33B5 /* Hello.swift */; };
 		1E3739D221243166002C1352 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3739D121243166002C1352 /* Image.xcassets */; };
@@ -26,6 +26,9 @@
 		1E498A6421C8925B007F2E18 /* RuntimeDemo+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E498A6321C8925B007F2E18 /* RuntimeDemo+Util.m */; };
 		1E498A6721C8A3EB007F2E18 /* MyView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E498A6621C8A3EB007F2E18 /* MyView1.m */; };
 		1E4BDF5A217B79A0007E23ED /* CopyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BDF59217B79A0007E23ED /* CopyTest.m */; };
+		1E4E212323C712F2001DFB2F /* TestCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4E212223C712F2001DFB2F /* TestCompare.m */; };
+		1E5BDA7A2251DE5200EE7834 /* KDLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BDA792251DE5200EE7834 /* KDLayerVC.m */; };
+		1E5BDA7E2251E24400EE7834 /* KDAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BDA7D2251E24400EE7834 /* KDAnimationVC.m */; };
 		1E6FBD08217741E100876206 /* DispatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FBD07217741E100876206 /* DispatchTest.m */; };
 		1E79DAE2219D8A1A00867F1A /* CopyTest+Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79DAE1219D8A1A00867F1A /* CopyTest+Hello.m */; };
 		1E8E3C762122ACA4001418E5 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E3C752122ACA4001418E5 /* 2.png */; };
@@ -58,6 +61,8 @@
 		1EBF65AA21C73762000D92ED /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF65A721C73762000D92ED /* MyClass.m */; };
 		1EBF65AB21C73762000D92ED /* RuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF65A821C73762000D92ED /* RuntimeTest.m */; };
 		1EDB0471217708EA0039A010 /* RunLoopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB046F217708EA0039A010 /* RunLoopTest.m */; };
+		1EF2D3E223C4207100456763 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF2D3E123C4207100456763 /* TestObject.m */; };
+		1EF6EF4022C0F5DA00C25836 /* RuntimeTest3.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF6EF3F22C0F5DA00C25836 /* RuntimeTest3.m */; };
 		8246D214DB75C23992B0D663 /* Pods_kd_studyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FEEF1B482DC0D3D398C81F /* Pods_kd_studyTests.framework */; };
 		EEA59CF16C480EBBBC288040 /* Pods_kd_studyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7471DB7B6EE81ECAF47A80A /* Pods_kd_studyUITests.framework */; };
 		FFB1D2AF99AD86EB352B39DC /* Pods_kd_study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C7873E6E78DCC99A5E793 /* Pods_kd_study.framework */; };
@@ -93,7 +98,7 @@
 		1E15F84521251FCC00C9F734 /* MyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		1E15F84621251FCC00C9F734 /* EnumTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTest.swift; sourceTree = "<group>"; };
 		1E15F84721251FCD00C9F734 /* RuntimeDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeDemo.swift; sourceTree = "<group>"; };
-		1E15F84821251FCD00C9F734 /* TestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMethod.swift; sourceTree = "<group>"; };
+		1E15F84821251FCD00C9F734 /* TestMethod1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMethod1.swift; sourceTree = "<group>"; };
 		1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestOperatorMethod.swift; sourceTree = "<group>"; };
 		1E1A892A2122776F00CD33B5 /* kd_study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kd_study-Bridging-Header.h"; sourceTree = "<group>"; };
 		1E1A892B2122776F00CD33B5 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
@@ -108,6 +113,12 @@
 		1E4BDF57217B78C6007E23ED /* learn-copy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "learn-copy.md"; sourceTree = "<group>"; };
 		1E4BDF58217B79A0007E23ED /* CopyTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyTest.h; sourceTree = "<group>"; };
 		1E4BDF59217B79A0007E23ED /* CopyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyTest.m; sourceTree = "<group>"; };
+		1E4E212123C712F2001DFB2F /* TestCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCompare.h; sourceTree = "<group>"; };
+		1E4E212223C712F2001DFB2F /* TestCompare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCompare.m; sourceTree = "<group>"; };
+		1E5BDA782251DE5200EE7834 /* KDLayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDLayerVC.h; sourceTree = "<group>"; };
+		1E5BDA792251DE5200EE7834 /* KDLayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDLayerVC.m; sourceTree = "<group>"; };
+		1E5BDA7C2251E24400EE7834 /* KDAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDAnimationVC.h; sourceTree = "<group>"; };
+		1E5BDA7D2251E24400EE7834 /* KDAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDAnimationVC.m; sourceTree = "<group>"; };
 		1E6FBD06217741E100876206 /* DispatchTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchTest.h; sourceTree = "<group>"; };
 		1E6FBD07217741E100876206 /* DispatchTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchTest.m; sourceTree = "<group>"; };
 		1E79DAE0219D8A1A00867F1A /* CopyTest+Hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CopyTest+Hello.h"; sourceTree = "<group>"; };
@@ -171,6 +182,10 @@
 		1EBF65A821C73762000D92ED /* RuntimeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTest.m; sourceTree = "<group>"; };
 		1EDB046F217708EA0039A010 /* RunLoopTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopTest.m; sourceTree = "<group>"; };
 		1EDB0470217708EA0039A010 /* RunLoopTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopTest.h; sourceTree = "<group>"; };
+		1EF2D3E023C4207100456763 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		1EF2D3E123C4207100456763 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		1EF6EF3E22C0F5DA00C25836 /* RuntimeTest3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeTest3.h; sourceTree = "<group>"; };
+		1EF6EF3F22C0F5DA00C25836 /* RuntimeTest3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeTest3.m; sourceTree = "<group>"; };
 		1F367A38356B747035017796 /* Pods-kd_study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kd_study.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kd_study/Pods-kd_study.debug.xcconfig"; sourceTree = "<group>"; };
 		26FEEF1B482DC0D3D398C81F /* Pods_kd_studyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kd_studyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A84C2461E7402BBE83A17A /* Pods-kd_studyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kd_studyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kd_studyUITests/Pods-kd_studyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -235,7 +250,7 @@
 				1E15F84221251FCC00C9F734 /* Hello 2.swift */,
 				1E15F84121251FCC00C9F734 /* MyView.swift */,
 				1E15F84721251FCD00C9F734 /* RuntimeDemo.swift */,
-				1E15F84821251FCD00C9F734 /* TestMethod.swift */,
+				1E15F84821251FCD00C9F734 /* TestMethod1.swift */,
 				1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */,
 				1E15F84021251FCC00C9F734 /* TestProtocol.swift */,
 				1E15F83F21251FCC00C9F734 /* TestString.swift */,
@@ -264,6 +279,33 @@
 				1E79DAE1219D8A1A00867F1A /* CopyTest+Hello.m */,
 			);
 			path = Copy;
+			sourceTree = "<group>";
+		};
+		1E5BDA762251D99800EE7834 /* core_animation */ = {
+			isa = PBXGroup;
+			children = (
+				1E5BDA7B2251E23200EE7834 /* animation */,
+				1E5BDA772251DE3900EE7834 /* calayer */,
+			);
+			path = core_animation;
+			sourceTree = "<group>";
+		};
+		1E5BDA772251DE3900EE7834 /* calayer */ = {
+			isa = PBXGroup;
+			children = (
+				1E5BDA782251DE5200EE7834 /* KDLayerVC.h */,
+				1E5BDA792251DE5200EE7834 /* KDLayerVC.m */,
+			);
+			path = calayer;
+			sourceTree = "<group>";
+		};
+		1E5BDA7B2251E23200EE7834 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				1E5BDA7C2251E24400EE7834 /* KDAnimationVC.h */,
+				1E5BDA7D2251E24400EE7834 /* KDAnimationVC.m */,
+			);
+			path = animation;
 			sourceTree = "<group>";
 		};
 		1E8E3C742122AC74001418E5 /* Resources */ = {
@@ -298,7 +340,6 @@
 			isa = PBXGroup;
 			children = (
 				1EB4122621C4DBDC00EEFECB /* TestAssociateObj.h */,
-				1EB4122721C4DBDC00EEFECB /* TestMethod.m */,
 				1EB4122821C4DBDC00EEFECB /* TestObjc.h */,
 				1EB4122921C4DBDC00EEFECB /* TestProperty.m */,
 				1EB4122A21C4DBDC00EEFECB /* TestBlock.h */,
@@ -309,6 +350,7 @@
 				1EB4122F21C4DBDC00EEFECB /* TestIVar.h */,
 				1EB4123021C4DBDC00EEFECB /* TestProtocol.h */,
 				1EB4123121C4DBDC00EEFECB /* TestMethod.h */,
+				1EB4122721C4DBDC00EEFECB /* TestMethod.m */,
 				1EB4123221C4DBDC00EEFECB /* TestAssociateObj.m */,
 				1EB4123321C4DBDC00EEFECB /* TestClass.m */,
 				1EB4123421C4DBDC00EEFECB /* TestBlock.m */,
@@ -326,10 +368,10 @@
 		1EB4123D21C4DBDC00EEFECB /* superClass */ = {
 			isa = PBXGroup;
 			children = (
+				1EB4124121C4DBDC00EEFECB /* SubClass.h */,
 				1EB4123E21C4DBDC00EEFECB /* SubClass.m */,
 				1EB4123F21C4DBDC00EEFECB /* SuperClass.h */,
 				1EB4124021C4DBDC00EEFECB /* SuperClass.mm */,
-				1EB4124121C4DBDC00EEFECB /* SubClass.h */,
 			);
 			path = superClass;
 			sourceTree = "<group>";
@@ -377,6 +419,7 @@
 		1EBA7A06212275C3008F518C /* kd_study */ = {
 			isa = PBXGroup;
 			children = (
+				1E5BDA762251D99800EE7834 /* core_animation */,
 				1EBF65AC21C7746B000D92ED /* ui */,
 				1EB4122421C4DBDC00EEFECB /* runtime */,
 				1EDB046E217708CF0039A010 /* basic */,
@@ -394,6 +437,8 @@
 				1E1A892A2122776F00CD33B5 /* kd_study-Bridging-Header.h */,
 				1E4292C3219C275C00B0A825 /* LastResponder.h */,
 				1E4292C4219C275C00B0A825 /* LastResponder.m */,
+				1EF2D3E023C4207100456763 /* TestObject.h */,
+				1EF2D3E123C4207100456763 /* TestObject.m */,
 			);
 			path = kd_study;
 			sourceTree = "<group>";
@@ -420,11 +465,13 @@
 			isa = PBXGroup;
 			children = (
 				1EBF65A321C73762000D92ED /* RuntimeTest2.h */,
-				1EBF65A421C73762000D92ED /* RuntimeTest.h */,
-				1EBF65A521C73762000D92ED /* MyClass.h */,
 				1EBF65A621C73762000D92ED /* RuntimeTest2.m */,
-				1EBF65A721C73762000D92ED /* MyClass.m */,
+				1EBF65A421C73762000D92ED /* RuntimeTest.h */,
 				1EBF65A821C73762000D92ED /* RuntimeTest.m */,
+				1EBF65A521C73762000D92ED /* MyClass.h */,
+				1EBF65A721C73762000D92ED /* MyClass.m */,
+				1EF6EF3E22C0F5DA00C25836 /* RuntimeTest3.h */,
+				1EF6EF3F22C0F5DA00C25836 /* RuntimeTest3.m */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -448,6 +495,8 @@
 				1EDB046F217708EA0039A010 /* RunLoopTest.m */,
 				1E0F59E9219BCA150021B979 /* KDLockTest.h */,
 				1E0F59EA219BCA150021B979 /* KDLockTest.m */,
+				1E4E212123C712F2001DFB2F /* TestCompare.h */,
+				1E4E212223C712F2001DFB2F /* TestCompare.m */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -617,7 +666,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-kd_study/Pods-kd_study-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-kd_study/Pods-kd_study-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
@@ -648,7 +697,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kd_study/Pods-kd_study-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kd_study/Pods-kd_study-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4C3CBA3E99831B71F6CE8B8A /* [CP] Check Pods Manifest.lock */ = {
@@ -726,6 +775,7 @@
 				1EBF65AA21C73762000D92ED /* MyClass.m in Sources */,
 				1E498A6721C8A3EB007F2E18 /* MyView1.m in Sources */,
 				1E15F84B21251FCD00C9F734 /* TestProtocol.swift in Sources */,
+				1EF6EF4022C0F5DA00C25836 /* RuntimeTest3.m in Sources */,
 				1E4BDF5A217B79A0007E23ED /* CopyTest.m in Sources */,
 				1EBA7A17212275C4008F518C /* main.m in Sources */,
 				1EB4125321C4DBDC00EEFECB /* TestSelector.m in Sources */,
@@ -742,7 +792,7 @@
 				1EDB0471217708EA0039A010 /* RunLoopTest.m in Sources */,
 				1E1A892C2122776F00CD33B5 /* Hello.swift in Sources */,
 				1EB4125D21C4DC0300EEFECB /* KDUtil.m in Sources */,
-				1E15F85221251FCD00C9F734 /* TestMethod.swift in Sources */,
+				1E15F85221251FCD00C9F734 /* TestMethod1.swift in Sources */,
 				1EB4125421C4DBDC00EEFECB /* TestIVar.m in Sources */,
 				1EBF65A921C73762000D92ED /* RuntimeTest2.m in Sources */,
 				1E15F85121251FCD00C9F734 /* RuntimeDemo.swift in Sources */,
@@ -753,8 +803,12 @@
 				1EB4125A21C4DBDC00EEFECB /* RuntimeDemo.m in Sources */,
 				1E79DAE2219D8A1A00867F1A /* CopyTest+Hello.m in Sources */,
 				1EB4124D21C4DBDC00EEFECB /* TestWeak.m in Sources */,
+				1EF2D3E223C4207100456763 /* TestObject.m in Sources */,
 				1EBA7A09212275C3008F518C /* AppDelegate.m in Sources */,
 				1EB4124B21C4DBDC00EEFECB /* TestProperty.m in Sources */,
+				1E5BDA7E2251E24400EE7834 /* KDAnimationVC.m in Sources */,
+				1E5BDA7A2251DE5200EE7834 /* KDLayerVC.m in Sources */,
+				1E4E212323C712F2001DFB2F /* TestCompare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -928,7 +982,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8M8Y7973D3;
 				INFOPLIST_FILE = kd_study/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -939,7 +993,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "KDWeiboClient Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "kd_study/kd_study-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -953,7 +1007,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kd_study/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -962,7 +1016,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "kd_study/kd_study-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

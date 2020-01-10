@@ -16,14 +16,24 @@
 #import "DispatchTest.h"
 
 #import "RuntimeDemo.h"
+#import "KDLayerVC.h"
+#import "KDAnimationVC.h"
 
-@interface ViewController ()
+#import "RunLoopTest.h"
+#import "TestObject.h"
+#import "TestCompare.h"
+
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource> {
+    UITableView *_tableView;
+}
+@property (nonatomic, strong) NSArray<KDHomeSectionModel *> *models;
 
 @property (nonatomic, strong) UIImageView *imgView;
 @property (nonatomic, strong) UITextView *textView;
 
 @property (nonatomic, strong) NSTextStorage *textStorage;
 
+@property (nonatomic, strong) TestObject* testObj;
 
 
 @property (nonatomic, strong) CALayer *layer1;
@@ -40,24 +50,124 @@
 //
 //    [DispatchTest test];
 
-    self.view.backgroundColor = UIColor.lightGrayColor;
-    
-    self.layer1 = [[CALayer alloc] init];
-    self.layer1.backgroundColor = UIColor.redColor.CGColor;
-    self.layer1.bounds = CGRectMake(0, 0, 300, 300);
-    
-    
-    [self.view.layer addSublayer:self.layer1];
-    
+    [self setupView];
 //    [self testImageLoad];
 //    [self testTextView];
-    
-    [RuntimeDemo test];
+//    [self testKVO];
+//    [RuntimeDemo test];
+//    [TestCompare test];
+    [RunLoopTest test];
     
 //    dispatch_async(dispatch_get_global_queue(0, 0), ^{
 //        NSLog(@"=1== %@", [NSThread currentThread]);
 //        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notiTask:) name:UIApplicationDidBecomeActiveNotification object:nil];
 //    });
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+//    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+//    NSLog(@"111");
+}
+
+- (void)setupView {
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    _tableView = [[UITableView alloc] init];
+    [self.view addSubview:_tableView];
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+}
+
+- (void)testKVO {
+    self.testObj = [[TestObject alloc] init];
+    
+//    [self.testObj addObserver:self
+//                   forKeyPath:@"name"
+//                      options:NSKeyValueObservingOptionInitial
+//                            | NSKeyValueObservingOptionNew
+//                            | NSKeyValueObservingOptionOld
+//                      context:nil];
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        self.testObj.name = @"222";
+//    });
+    
+    [self testKVOTheory];
+}
+
+- (void)testKVOTheory {
+    NSLog(@"class-withOutKVO: %@ \n", object_getClass(_testObj));
+    NSLog(@"setterAdress-withOutKVO: %p \n", [_testObj methodForSelector:@selector(setAName:)]);
+    [_testObj addObserver:self forKeyPath:@"aName" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:(__bridge void *)(self)];
+    NSLog(@"class-addKVO class: %@ \n", [_testObj class]);
+    NSLog(@"class-addKVO get class: %@ \n", object_getClass(_testObj));
+    NSLog(@"setterAdress-addKVO: %p \n", [_testObj methodForSelector:@selector(setAName:)]);
+    [_testObj removeObserver:self forKeyPath:@"aName"];
+    NSLog(@"class-removeKVO: %@", object_getClass(_testObj));
+    NSLog(@"setterAdress-removeKVO: %p \n", [_testObj methodForSelector:@selector(setAName:)]);
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    NSLog(@"keyPath:%@, object:%@, change:%@", keyPath, object, change);
+}
+
+#pragma mark - table
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.models.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    KDHomeSectionModel *sectionModel = [self.models objectAtIndex:section];
+
+    return sectionModel.rowModels.count;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    KDHomeSectionModel *sectionModel = [self.models objectAtIndex:section];
+    
+    return sectionModel.title;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableViewCell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TableViewCell"];
+    }
+    
+    KDHomeSectionModel *sectionModel = [self.models objectAtIndex:indexPath.section];
+    KDHomeRowModel *model = [sectionModel.rowModels objectAtIndex:indexPath.row];
+    cell.textLabel.text = model.title;
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [cell setSelected:NO];
+    
+    KDHomeSectionModel *sectionModel = [self.models objectAtIndex:indexPath.section];
+    KDHomeRowModel *model = [sectionModel.rowModels objectAtIndex:indexPath.row];
+    switch (model.type) {
+        case KDHomeModelCALayer: {
+            UIViewController *vc = [[KDLayerVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case KDHomeModelAnimation: {
+            UIViewController *vc = [[KDAnimationVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
+    
 }
 
 - (void)testImageLoad {
@@ -118,14 +228,6 @@
     NSLog(@"=== %@", [NSThread currentThread]);
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    UIResponder *responder = [self nextResponder];
-    
-    NSLog(@"111");
-}
-
 - (UIImageView *)imgView {
     if (!_imgView) {
         _imgView = [[UIImageView alloc] init];
@@ -180,6 +282,48 @@
     
     [CATransaction commit];
     [CATransaction commit];
+}
+
+- (NSArray<KDHomeSectionModel *> *)models {
+    if (_models == nil) {
+        NSMutableArray<KDHomeSectionModel *> *models = @[].mutableCopy;
+        
+        KDHomeSectionModel *secion1 = [[KDHomeSectionModel alloc] initWithTitle:@"Core Animtaion" rowModels:@[
+                [[KDHomeRowModel alloc] initWithType:KDHomeModelCALayer title:@"CALayer 子类"],
+                [[KDHomeRowModel alloc] initWithType:KDHomeModelAnimation title:@"动画"]]];
+        [models addObject:secion1];
+        
+        _models = models.copy;
+    }
+    
+    return _models;
+}
+@end
+
+@implementation KDHomeSectionModel
+
+- (instancetype)initWithTitle:(NSString *)title rowModels:(NSArray<KDHomeRowModel *> *)models {
+    self = [super init];
+    if (self) {
+        self.title = title;
+        self.rowModels = models;
+    }
+    return self;
+}
+
+@end
+
+
+@implementation KDHomeRowModel
+
+- (instancetype)initWithType:(KDHomeModelType)type title:(NSString *)title
+{
+    self = [super init];
+    if (self) {
+        self.type = type;
+        self.title = title;
+    }
+    return self;
 }
 
 @end

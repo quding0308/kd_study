@@ -9,6 +9,7 @@
 #import "SubClass.h"
 
 #import <objc/runtime.h>
+#import <objc/message.h>
 
 
 /**
@@ -28,6 +29,35 @@
 {
     self = [super init];
     if (self) {
+        
+        NSObject *obj = nil;
+        [obj valueForKey:@""];
+        
+        
+        
+        NSString *str = @"hello";
+        char *str1 = "hello";
+        
+        SEL sel1 = sel_registerName("hello");
+        SEL sel2 = sel_registerName("hello");
+        
+        
+        
+        NSSelectorFromString(@"");
+
+        SEL hello = @selector(forwardInvocation);
+        SEL hello1 = @selector(forwardInvocation:);
+        
+        SEL sel = @selector(helloName1:withName2:withName3:);
+        if ([self respondsToSelector:sel]) {
+            IMP imp = [self methodForSelector:sel];
+            if (imp != 0) {
+                id result = ((id(*)(id, id, id))imp)(@"",@"",@"");
+            }
+        }
+        
+        [self kd_performSelector:@selector(helloName1:withName2:withName3:) withObject:@"name1" withObject:@"name2" withObject:@"name3"];
+        
 //        objc_setAssociatedObject(<#id  _Nonnull object#>, <#const void * _Nonnull key#>, <#id  _Nullable value#>, <#objc_AssociationPolicy policy#>)
     
 //        [self doesNotRecognizeSelector:<#(SEL)#>];
@@ -38,6 +68,32 @@
 //- (void)hello {
 //    NSLog(@"");
 //}
+
+- (id)kd_performSelector:(SEL)sel withObject:(id)obj1 withObject:(id)obj2 withObject:(id)obj3 {
+    if (!sel) [self doesNotRecognizeSelector:sel];
+    
+    // stret = struct return
+//    objc_msgSend_stret
+    // fpret = float return
+//    objc_msgSend_fpret
+    // for some float return types.
+//  objc_msgSend_fp2ret
+    // return id
+//    objc_msgSend
+    
+    
+//    return ((id(*)(id, SEL, id, id, id))objc_msgSend)(self, sel, obj1, obj2, obj3);
+    return ((id(*)(id, SEL, id, id, id))objc_msgSend)(self, sel, obj1, obj2, obj3);
+
+}
+
+- (NSString *)helloName1:(NSString *)name1 withName2:(NSString *)name2 withName3:(NSString *)name3 {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
+    return @"return_value";
+}
+
+
 
 void dealWithExceptionForUnknownMethod(id self, SEL _cmd) {
     NSLog(@"dealWithExceptionForUnknownMethod %@, %p", self, _cmd); // Print: <ViewController: 0x7ff96be33e60>, 0x1078259fc
@@ -60,7 +116,7 @@ void dealWithExceptionForUnknownMethod(id self, SEL _cmd) {
     NSString *strSelector = NSStringFromSelector(aSelector);
     if ([strSelector isEqualToString:@"hello"]) {
         // 被截获，并用其他方法处理
-        //        class_addMethod(self.class, @selector(hello), (IMP) dealWithExceptionForUnknownMethod, "v@:");
+//        class_addMethod(self.class, @selector(hello), (IMP) dealWithExceptionForUnknownMethod, "v@:");
         
 //        return [[InvocationDemo alloc] init];
     }
@@ -70,24 +126,25 @@ void dealWithExceptionForUnknownMethod(id self, SEL _cmd) {
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     NSMethodSignature *signature = [super methodSignatureForSelector:aSelector];
-    if (!signature) {
+//    if (!signature) {
         if ([InvocationDemo instancesRespondToSelector:aSelector]) {
             signature = [InvocationDemo instanceMethodSignatureForSelector:aSelector];
 //            signature = [InvocationDemo instanceMethodSignatureForSelector:@selector(hello1)];
+            
+            return signature;
         }
-    }
+//    }
     
     return signature;
 }
 
-- (void)forwardInvocation:(NSInvocation *)anInvocation {
-    if ([InvocationDemo instancesRespondToSelector:anInvocation.selector]) {
-        [anInvocation invokeWithTarget:[[InvocationDemo alloc] init]];
-    } else {
-        NSLog(@"");
-    }
-    
-}
+//- (void)forwardInvocation:(NSInvocation *)anInvocation {
+//    if ([InvocationDemo instancesRespondToSelector:anInvocation.selector]) {
+////        [anInvocation invokeWithTarget:[[InvocationDemo alloc] init]];
+//    } else {
+//        NSLog(@"forwardInvocation");
+//    }
+//}
 
 #pragma mark - 类方法转发
 + (BOOL)resolveClassMethod:(SEL)sel {
@@ -155,9 +212,9 @@ void dealWithExceptionForUnknownMethod(id self, SEL _cmd) {
 
 @implementation InvocationDemo
 
-//- (void)hello {
-//    NSLog(@"hello");
-//}
+- (void)hello {
+    NSLog(@"hello");
+}
 
 - (void)hello1 {
     NSLog(@"hello1");
