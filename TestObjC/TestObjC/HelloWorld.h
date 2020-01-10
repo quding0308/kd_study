@@ -8,16 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
-//extern int const Age;
-
-extern const NSString *Name;
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HelloWorld : NSObject
 
+- (void)hello;
 - (void)hello1;
 
 @end
+
+@interface Person: NSObject
+
+@property (nonatomic, strong) NSString *name;
+
+@end
+
 
 NS_ASSUME_NONNULL_END

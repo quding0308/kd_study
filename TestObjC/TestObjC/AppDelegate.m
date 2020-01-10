@@ -8,15 +8,83 @@
 
 #import "AppDelegate.h"
 
+#import <CommonCrypto/CommonCryptor.h>
+#import "MyNetworkTest.h"
+
 @interface AppDelegate ()
+
+@property (nonatomic, assign) int keySize, blockSize;
+
+@property (nonatomic, strong) MyNetworkTest *mytest;
 
 @end
 
 @implementation AppDelegate
 
+// 加密字符串并返回base64编码字符串
+- (NSString *)encryptString:(NSString *)string keyString:(NSString *)keyString iv:(NSData *)iv {
+    
+    self.keySize = 32;
+    self.blockSize = 128;
+    
+    // 设置秘钥 将keyString转成二进制
+    NSData *keyData = [keyString dataUsingEncoding:NSUTF8StringEncoding];
+    uint8_t cKey[self.keySize];
+    bzero(cKey, sizeof(cKey));
+    [keyData getBytes:cKey length:self.keySize];
+    
+    // 设置iv
+    uint8_t cIv[self.blockSize];
+    bzero(cIv, self.blockSize);
+    int option = 0;
+    if (iv) {
+        [iv getBytes:cIv length:self.blockSize];
+        option = kCCOptionPKCS7Padding; // CBC加密
+    } else {
+        option = kCCOptionPKCS7Padding | kCCOptionECBMode;  // ECB加密
+    }
+    
+    // 设置输出缓冲区 将原始数据转成二进制，并根据所使用的加密方式设置缓冲区
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    size_t bufferSize = [data length] + self.blockSize;
+    void *buffer = malloc(bufferSize);
+    
+    // 开始加密
+    size_t encryptedSize = 0;
+    //加密解密都是它 -- CCCrypt
+    CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
+                                          kCCAlgorithmAES128,
+                                          option,
+                                          cKey,
+                                          self.keySize,
+                                          cIv,
+                                          [data bytes],
+                                          [data length],
+                                          buffer,
+                                          bufferSize,
+                                          &encryptedSize);
+    
+    NSData *result = nil;
+    if (cryptStatus == kCCSuccess) {
+        result = [NSData dataWithBytesNoCopy:buffer length:encryptedSize];
+    } else {
+        free(buffer);
+        NSLog(@"[错误] 加密失败|状态编码: %d", cryptStatus);
+    }
+    
+    return [result base64EncodedStringWithOptions:0];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.mytest = [[MyNetworkTest alloc] init];
+    [self.mytest start];
+//    NSData *data = [@"0102030405060708" dataUsingEncoding:NSUTF8StringEncoding];
+//    NSString *result = [self encryptString:@"hello" keyString:@"616263" iv:data];
+    
+    BOOL isDoubleLine = true;
+    id dict = @{@"isDoubleLine":@(isDoubleLine)};
+    
     return YES;
 }
 
