@@ -42,24 +42,15 @@
         make.top.mas_equalTo(self.view).mas_offset(100);
     }];
     
-    self.imgView = [[UIImageView alloc] init];
-    [self.view addSubview:self.imgView];
-    [self.imgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.bottom.mas_equalTo(self.view);
-        make.width.height.mas_equalTo(100);
-    }];
+    self.grahpicsView.backgroundColor = UIColor.lightGrayColor;
+    [self testBasic];
     
     
     CALayer *layer = [CALayer layer];
     layer.backgroundColor = [[UIColor yellowColor] CGColor];
-    
-//    layer.bounds =  CGRectMake(0, 0, 500, 500);
     layer.frame =  CGRectMake(self.view.bounds.origin.x,
-                              self.view.bounds.origin.y + 64, 300, 300);
-    
+                              self.view.bounds.origin.y + 64, 100, 100);
     layer.contents = (id)[[UIImage imageNamed:@"widget_btn_card_normal"] CGImage];
-    //the name is correct but  in the output the image is not visible
-    
     [[self.view layer] addSublayer:layer];
 //    [layer setNeedsDisplay];
     
@@ -133,6 +124,36 @@
     return _grahpicsView;
 }
 
+- (void)testBasic {
+    self.imgView = [[UIImageView alloc] init];
+    [self.view addSubview:self.imgView];
+    [self.imgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.bottom.mas_equalTo(self.view).mas_offset(-20);
+        make.width.height.mas_equalTo(100);
+    }];
+    self.imgView.backgroundColor = UIColor.purpleColor;
+//    self.imgView.image = [UIImage imageNamed:@"widget_btn_card_normal"];
+//    self.imgView.contentMode = UIViewContentModeScaleToFill;
+    
+    self.imgView.layer.cornerRadius = 50.0f;
+    self.imgView.clipsToBounds = YES;
+//    self.imgView.layer.masksToBounds = true;
+//    self.imgView.layer.maskedCorners = kCALayerMaxXMaxYCorner;
+    
+    
+//    UIView *maskView = [[UIView alloc] init];
+//    maskView.alpha = 0.5;
+//    self.imgView.maskView = maskView;
+    
+    CALayer *maskLayer = [CALayer layer];
+//    maskLayer.opacity = 1;
+    maskLayer.backgroundColor = UIColor.redColor.CGColor;
+    maskLayer.bounds = CGRectMake(0, 0, 10, 10);
+    maskLayer.position = self.imgView.layer.position;
+//    self.imgView.layer.mask = maskLayer;
+    [self.imgView.layer addSublayer:maskLayer];
+    
+}
 
 @end
 

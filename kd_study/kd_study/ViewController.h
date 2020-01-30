@@ -17,8 +17,8 @@
 typedef NS_ENUM(NSInteger, KDHomeModelType) {
     KDHomeModelCALayer = 0,  //
     KDHomeModelAnimation,  // 
-    KDHomeModelAgreement,  // 用户协议
-    KDHomeModelLog // 上传日志
+    KDHomeModelOffScreen,  //
+    KDHomeModelAttrStr
 };
 
 @class KDHomeRowModel;

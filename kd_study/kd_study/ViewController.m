@@ -18,6 +18,8 @@
 #import "RuntimeDemo.h"
 #import "KDLayerVC.h"
 #import "KDAnimationVC.h"
+#import "OffScreenRenderVC.h"
+#import "AttrStrVC.h"
 
 #import "RunLoopTest.h"
 #import "TestObject.h"
@@ -38,6 +40,8 @@
 
 @property (nonatomic, strong) CALayer *layer1;
 
+@property (nonatomic, strong) CADisplayLink *displayLink;
+
 @end
 
 @implementation ViewController
@@ -45,9 +49,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    [self.displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        while (true) {
+//            //
+//        }
+//    });
     
 //    [[[Hello alloc] init] hello];
-//
 //    [DispatchTest test];
 
     [self setupView];
@@ -56,7 +65,7 @@
 //    [self testKVO];
 //    [RuntimeDemo test];
 //    [TestCompare test];
-    [RunLoopTest test];
+//    [RunLoopTest test];
     
 //    dispatch_async(dispatch_get_global_queue(0, 0), ^{
 //        NSLog(@"=1== %@", [NSThread currentThread]);
@@ -117,6 +126,22 @@
     NSLog(@"keyPath:%@, object:%@, change:%@", keyPath, object, change);
 }
 
+- (CADisplayLink *)displayLink {
+    if (_displayLink == nil) {
+        _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayStep:)];
+//        _displayLink.preferredFramesPerSecond = 6000;
+//        _displayLink.frameInterval = 6000;
+    }
+    
+    return _displayLink;
+}
+
+- (void)displayStep:(CADisplayLink *)displayLink {
+    NSLog(@"%@", displayLink);
+//    self.title = [NSString stringWithFormat:@"%f", displayLink.timestamp];
+    self.title = [NSString stringWithFormat:@"%f", 1 / displayLink.duration];
+}
+
 #pragma mark - table
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.models.count;
@@ -143,7 +168,7 @@
     KDHomeSectionModel *sectionModel = [self.models objectAtIndex:indexPath.section];
     KDHomeRowModel *model = [sectionModel.rowModels objectAtIndex:indexPath.row];
     cell.textLabel.text = model.title;
-    
+
     return cell;
 }
 
@@ -164,10 +189,19 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case KDHomeModelOffScreen: {
+            UIViewController *vc = [[OffScreenRenderVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case KDHomeModelAttrStr: {
+            UIViewController *vc = [[AttrStrVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }
-    
 }
 
 - (void)testImageLoad {
@@ -288,9 +322,13 @@
     if (_models == nil) {
         NSMutableArray<KDHomeSectionModel *> *models = @[].mutableCopy;
         
-        KDHomeSectionModel *secion1 = [[KDHomeSectionModel alloc] initWithTitle:@"Core Animtaion" rowModels:@[
-                [[KDHomeRowModel alloc] initWithType:KDHomeModelCALayer title:@"CALayer 子类"],
-                [[KDHomeRowModel alloc] initWithType:KDHomeModelAnimation title:@"动画"]]];
+        NSArray *rows = @[
+            [[KDHomeRowModel alloc] initWithType:KDHomeModelCALayer title:@"CALayer 子类"],
+            [[KDHomeRowModel alloc] initWithType:KDHomeModelAnimation title:@"动画"],
+            [[KDHomeRowModel alloc] initWithType:KDHomeModelOffScreen title:@"离屏渲染"],
+            [[KDHomeRowModel alloc] initWithType:KDHomeModelAttrStr title:@"NSAttributedString"]
+        ];
+        KDHomeSectionModel *secion1 = [[KDHomeSectionModel alloc] initWithTitle:@"Core Animtaion" rowModels:rows];
         [models addObject:secion1];
         
         _models = models.copy;

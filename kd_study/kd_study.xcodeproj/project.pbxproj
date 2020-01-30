@@ -20,6 +20,11 @@
 		1E15F85221251FCD00C9F734 /* TestMethod1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84821251FCD00C9F734 /* TestMethod1.swift */; };
 		1E15F85321251FCD00C9F734 /* TestOperatorMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */; };
 		1E1A892C2122776F00CD33B5 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1A892B2122776F00CD33B5 /* Hello.swift */; };
+		1E1AF55923D573C400A77941 /* AttrStrVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AF55823D573C400A77941 /* AttrStrVC.m */; };
+		1E1AF55C23D5866100A77941 /* VerticalCenterTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AF55B23D5866100A77941 /* VerticalCenterTextLabel.m */; };
+		1E31B6B723D0040900E17966 /* 31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E31B6B523D0040900E17966 /* 31.jpg */; };
+		1E31B6B823D0040900E17966 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E31B6B623D0040900E17966 /* 3.jpg */; };
+		1E33F68523CEBAF00061A11A /* 3-no-alpha.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E33F68423CEBAF00061A11A /* 3-no-alpha.png */; };
 		1E3739D221243166002C1352 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3739D121243166002C1352 /* Image.xcassets */; };
 		1E4292C5219C275C00B0A825 /* LastResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4292C4219C275C00B0A825 /* LastResponder.m */; };
 		1E498A6121C792FB007F2E18 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E498A6021C792FB007F2E18 /* 3.png */; };
@@ -32,6 +37,7 @@
 		1E6FBD08217741E100876206 /* DispatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FBD07217741E100876206 /* DispatchTest.m */; };
 		1E79DAE2219D8A1A00867F1A /* CopyTest+Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79DAE1219D8A1A00867F1A /* CopyTest+Hello.m */; };
 		1E8E3C762122ACA4001418E5 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E3C752122ACA4001418E5 /* 2.png */; };
+		1E9AB34623CEF8350067C36B /* OffScreenRenderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AB34523CEF8350067C36B /* OffScreenRenderVC.m */; };
 		1EB4124A21C4DBDC00EEFECB /* TestMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4122721C4DBDC00EEFECB /* TestMethod.m */; };
 		1EB4124B21C4DBDC00EEFECB /* TestProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4122921C4DBDC00EEFECB /* TestProperty.m */; };
 		1EB4124C21C4DBDC00EEFECB /* TestLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4122C21C4DBDC00EEFECB /* TestLibrary.m */; };
@@ -102,6 +108,13 @@
 		1E15F84921251FCD00C9F734 /* TestOperatorMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestOperatorMethod.swift; sourceTree = "<group>"; };
 		1E1A892A2122776F00CD33B5 /* kd_study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kd_study-Bridging-Header.h"; sourceTree = "<group>"; };
 		1E1A892B2122776F00CD33B5 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
+		1E1AF55723D573C400A77941 /* AttrStrVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttrStrVC.h; sourceTree = "<group>"; };
+		1E1AF55823D573C400A77941 /* AttrStrVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttrStrVC.m; sourceTree = "<group>"; };
+		1E1AF55A23D5866100A77941 /* VerticalCenterTextLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalCenterTextLabel.h; sourceTree = "<group>"; };
+		1E1AF55B23D5866100A77941 /* VerticalCenterTextLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerticalCenterTextLabel.m; sourceTree = "<group>"; };
+		1E31B6B523D0040900E17966 /* 31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 31.jpg; sourceTree = "<group>"; };
+		1E31B6B623D0040900E17966 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		1E33F68423CEBAF00061A11A /* 3-no-alpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-no-alpha.png"; sourceTree = "<group>"; };
 		1E3739D121243166002C1352 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		1E4292C3219C275C00B0A825 /* LastResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastResponder.h; sourceTree = "<group>"; };
 		1E4292C4219C275C00B0A825 /* LastResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastResponder.m; sourceTree = "<group>"; };
@@ -124,6 +137,8 @@
 		1E79DAE0219D8A1A00867F1A /* CopyTest+Hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CopyTest+Hello.h"; sourceTree = "<group>"; };
 		1E79DAE1219D8A1A00867F1A /* CopyTest+Hello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CopyTest+Hello.m"; sourceTree = "<group>"; };
 		1E8E3C752122ACA4001418E5 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		1E9AB34423CEF8350067C36B /* OffScreenRenderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OffScreenRenderVC.h; sourceTree = "<group>"; };
+		1E9AB34523CEF8350067C36B /* OffScreenRenderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OffScreenRenderVC.m; sourceTree = "<group>"; };
 		1EB4122621C4DBDC00EEFECB /* TestAssociateObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAssociateObj.h; sourceTree = "<group>"; };
 		1EB4122721C4DBDC00EEFECB /* TestMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMethod.m; sourceTree = "<group>"; };
 		1EB4122821C4DBDC00EEFECB /* TestObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjc.h; sourceTree = "<group>"; };
@@ -281,13 +296,15 @@
 			path = Copy;
 			sourceTree = "<group>";
 		};
-		1E5BDA762251D99800EE7834 /* core_animation */ = {
+		1E5BDA762251D99800EE7834 /* CoreText */ = {
 			isa = PBXGroup;
 			children = (
-				1E5BDA7B2251E23200EE7834 /* animation */,
-				1E5BDA772251DE3900EE7834 /* calayer */,
+				1E1AF55723D573C400A77941 /* AttrStrVC.h */,
+				1E1AF55823D573C400A77941 /* AttrStrVC.m */,
+				1E1AF55A23D5866100A77941 /* VerticalCenterTextLabel.h */,
+				1E1AF55B23D5866100A77941 /* VerticalCenterTextLabel.m */,
 			);
-			path = core_animation;
+			path = CoreText;
 			sourceTree = "<group>";
 		};
 		1E5BDA772251DE3900EE7834 /* calayer */ = {
@@ -311,11 +328,23 @@
 		1E8E3C742122AC74001418E5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E31B6B623D0040900E17966 /* 3.jpg */,
+				1E31B6B523D0040900E17966 /* 31.jpg */,
+				1E33F68423CEBAF00061A11A /* 3-no-alpha.png */,
 				1E498A6021C792FB007F2E18 /* 3.png */,
 				1E3739D121243166002C1352 /* Image.xcassets */,
 				1E8E3C752122ACA4001418E5 /* 2.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1E9AB34323CEF8120067C36B /* OffScreenRender */ = {
+			isa = PBXGroup;
+			children = (
+				1E9AB34423CEF8350067C36B /* OffScreenRenderVC.h */,
+				1E9AB34523CEF8350067C36B /* OffScreenRenderVC.m */,
+			);
+			path = OffScreenRender;
 			sourceTree = "<group>";
 		};
 		1EB4122421C4DBDC00EEFECB /* runtime */ = {
@@ -419,7 +448,6 @@
 		1EBA7A06212275C3008F518C /* kd_study */ = {
 			isa = PBXGroup;
 			children = (
-				1E5BDA762251D99800EE7834 /* core_animation */,
 				1EBF65AC21C7746B000D92ED /* ui */,
 				1EB4122421C4DBDC00EEFECB /* runtime */,
 				1EDB046E217708CF0039A010 /* basic */,
@@ -479,6 +507,10 @@
 		1EBF65AC21C7746B000D92ED /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				1E5BDA7B2251E23200EE7834 /* animation */,
+				1E5BDA772251DE3900EE7834 /* calayer */,
+				1E5BDA762251D99800EE7834 /* CoreText */,
+				1E9AB34323CEF8120067C36B /* OffScreenRender */,
 				1E498A6521C8A3EB007F2E18 /* MyView1.h */,
 				1E498A6621C8A3EB007F2E18 /* MyView1.m */,
 			);
@@ -632,11 +664,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E31B6B823D0040900E17966 /* 3.jpg in Resources */,
 				1EBA7A14212275C4008F518C /* LaunchScreen.storyboard in Resources */,
+				1E31B6B723D0040900E17966 /* 31.jpg in Resources */,
 				1EBA7A11212275C4008F518C /* Assets.xcassets in Resources */,
 				1E3739D221243166002C1352 /* Image.xcassets in Resources */,
 				1E498A6121C792FB007F2E18 /* 3.png in Resources */,
 				1E8E3C762122ACA4001418E5 /* 2.png in Resources */,
+				1E33F68523CEBAF00061A11A /* 3-no-alpha.png in Resources */,
 				1EBA7A0F212275C3008F518C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,6 +807,7 @@
 				1E15F84D21251FCD00C9F734 /* Hello 2.swift in Sources */,
 				1E498A6421C8925B007F2E18 /* RuntimeDemo+Util.m in Sources */,
 				1E15F85021251FCD00C9F734 /* EnumTest.swift in Sources */,
+				1E9AB34623CEF8350067C36B /* OffScreenRenderVC.m in Sources */,
 				1EBF65AA21C73762000D92ED /* MyClass.m in Sources */,
 				1E498A6721C8A3EB007F2E18 /* MyView1.m in Sources */,
 				1E15F84B21251FCD00C9F734 /* TestProtocol.swift in Sources */,
@@ -785,6 +821,7 @@
 				1EB4125621C4DBDC00EEFECB /* SuperClass.mm in Sources */,
 				1EB4124F21C4DBDC00EEFECB /* TestClass.m in Sources */,
 				1E15F84F21251FCD00C9F734 /* MyClass.swift in Sources */,
+				1E1AF55923D573C400A77941 /* AttrStrVC.m in Sources */,
 				1EB4124C21C4DBDC00EEFECB /* TestLibrary.m in Sources */,
 				1EB4125921C4DBDC00EEFECB /* TestTaggedPointer.m in Sources */,
 				1E6FBD08217741E100876206 /* DispatchTest.m in Sources */,
@@ -798,6 +835,7 @@
 				1E15F85121251FCD00C9F734 /* RuntimeDemo.swift in Sources */,
 				1EB4124E21C4DBDC00EEFECB /* TestAssociateObj.m in Sources */,
 				1EB4125121C4DBDC00EEFECB /* TestObjc.m in Sources */,
+				1E1AF55C23D5866100A77941 /* VerticalCenterTextLabel.m in Sources */,
 				1E068757217B84B60005E4AF /* ArchiveTest.m in Sources */,
 				1EB4125721C4DBDC00EEFECB /* hello.m in Sources */,
 				1EB4125A21C4DBDC00EEFECB /* RuntimeDemo.m in Sources */,

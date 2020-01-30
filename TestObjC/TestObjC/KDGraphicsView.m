@@ -81,7 +81,7 @@
     
     // NSString
     NSDictionary *attrs = @{
-      NSForegroundColorAttributeName:[UIColor redColor]
+      NSForegroundColorAttributeName: [UIColor redColor]
     };
     [@"123你好" drawInRect:CGRectMake(200, 400, 200, 200) withAttributes:attrs];
     

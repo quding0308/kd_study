@@ -18,9 +18,9 @@
 		1E53FD6521CA546000466FAA /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E53FD6421CA546000466FAA /* HelloWorld.m */; };
 		1E53FD6721CA549A00466FAA /* HelloTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E53FD6621CA549A00466FAA /* HelloTest.m */; };
 		1E767876224A13AF002DC4E1 /* KDGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E767875224A13AF002DC4E1 /* KDGraphicsView.m */; };
-		1E76787A224A2C7D002DC4E1 /* widget_btn_card_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E767878224A2C7D002DC4E1 /* widget_btn_card_normal@2x.png */; };
-		1E76787B224A2C7D002DC4E1 /* widget_btn_card_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E767879224A2C7D002DC4E1 /* widget_btn_card_normal@3x.png */; };
 		1EB4249322375D090079B131 /* KDContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4249222375D090079B131 /* KDContainer.m */; };
+		1EB92F5D23CC5A4B0023AD23 /* widget_btn_card_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EB92F5B23CC5A4B0023AD23 /* widget_btn_card_normal@3x.png */; };
+		1EB92F5E23CC5A4B0023AD23 /* widget_btn_card_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EB92F5C23CC5A4B0023AD23 /* widget_btn_card_normal@2x.png */; };
 		1EC62A482321F80E005E9F38 /* MyNetworkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC62A472321F80E005E9F38 /* MyNetworkTest.m */; };
 		1EE55CC522375A8F004CB4B9 /* KDWrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE55CC422375A8F004CB4B9 /* KDWrapperView.m */; };
 		EC00F699DAC05D92D98D9A33 /* Pods_TestObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC431D0697A07204B3E2E478 /* Pods_TestObjC.framework */; };
@@ -46,10 +46,10 @@
 		1E53FD6621CA549A00466FAA /* HelloTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloTest.m; sourceTree = "<group>"; };
 		1E767874224A13AF002DC4E1 /* KDGraphicsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDGraphicsView.h; sourceTree = "<group>"; };
 		1E767875224A13AF002DC4E1 /* KDGraphicsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDGraphicsView.m; sourceTree = "<group>"; };
-		1E767878224A2C7D002DC4E1 /* widget_btn_card_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "widget_btn_card_normal@2x.png"; path = "../../../../yzj_gitlab/yzj_ios/Resources/images/WidgetImages.xcassets/widget_btn_card_normal.imageset/widget_btn_card_normal@2x.png"; sourceTree = "<group>"; };
-		1E767879224A2C7D002DC4E1 /* widget_btn_card_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "widget_btn_card_normal@3x.png"; path = "../../../../yzj_gitlab/yzj_ios/Resources/images/WidgetImages.xcassets/widget_btn_card_normal.imageset/widget_btn_card_normal@3x.png"; sourceTree = "<group>"; };
 		1EB4249122375D090079B131 /* KDContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDContainer.h; sourceTree = "<group>"; };
 		1EB4249222375D090079B131 /* KDContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDContainer.m; sourceTree = "<group>"; };
+		1EB92F5B23CC5A4B0023AD23 /* widget_btn_card_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "widget_btn_card_normal@3x.png"; sourceTree = "<group>"; };
+		1EB92F5C23CC5A4B0023AD23 /* widget_btn_card_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "widget_btn_card_normal@2x.png"; sourceTree = "<group>"; };
 		1EC62A462321F80E005E9F38 /* MyNetworkTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNetworkTest.h; sourceTree = "<group>"; };
 		1EC62A472321F80E005E9F38 /* MyNetworkTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNetworkTest.m; sourceTree = "<group>"; };
 		1EE55CC322375A8F004CB4B9 /* KDWrapperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDWrapperView.h; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 		1E767877224A2C76002DC4E1 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				1E767878224A2C7D002DC4E1 /* widget_btn_card_normal@2x.png */,
-				1E767879224A2C7D002DC4E1 /* widget_btn_card_normal@3x.png */,
+				1EB92F5C23CC5A4B0023AD23 /* widget_btn_card_normal@2x.png */,
+				1EB92F5B23CC5A4B0023AD23 /* widget_btn_card_normal@3x.png */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -208,9 +208,9 @@
 			files = (
 				1E1F161A21AF8EF800A8CDF1 /* LaunchScreen.storyboard in Resources */,
 				1E1F161721AF8EF800A8CDF1 /* Assets.xcassets in Resources */,
-				1E76787B224A2C7D002DC4E1 /* widget_btn_card_normal@3x.png in Resources */,
-				1E76787A224A2C7D002DC4E1 /* widget_btn_card_normal@2x.png in Resources */,
 				1E1F161521AF8EF700A8CDF1 /* Main.storyboard in Resources */,
+				1EB92F5E23CC5A4B0023AD23 /* widget_btn_card_normal@2x.png in Resources */,
+				1EB92F5D23CC5A4B0023AD23 /* widget_btn_card_normal@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +434,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kdweibo.client;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peak.im;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "KDWeiboClient Dev";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,8 +446,9 @@
 			baseConfigurationReference = DAA62C2B44029567AD052A1A /* Pods-TestObjC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LVPU5D2H3G;
 				INFOPLIST_FILE = TestObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = YES;
@@ -455,9 +456,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kdweibo.client;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peak.im;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = PeakYZJ_20200114;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

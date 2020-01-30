@@ -46,6 +46,15 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
+//    [self testImageLoad1];
+    [self testImageLoad2];
+    
+//    [self testBasicView1];
+//    [self testBasicLayer0];
+//    [self testBasicLayer1];
+//    [self testBasicLayer2];
+//    [self testShadowLayer];
+//    [self testMaskLayer];
 //    [self.view.layer addSublayer:self.textLayer];
 //    [self.view.layer addSublayer:self.shapeLayer];
 //    [self.view.layer addSublayer:self.gradientLayer];
@@ -54,12 +63,204 @@
     
 //    [self.view.layer addSublayer:self.rotationLayer];
 //    [self.view.layer addSublayer:self.transformLayer];
-
     
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+}
+
+- (void)testBasicView1 {
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = UIColor.yellowColor;
+    [self.view addSubview:view];
+    
+    view.frame = CGRectMake(10, 10, 200, 200);
+    view.center = CGPointMake(210, 210);
+    view.bounds = CGRectMake(-10, -10, 300, 300);
+    
+    NSLog(@"frame: %@", NSStringFromCGRect(view.frame));
+    NSLog(@"bounds: %@", NSStringFromCGRect(view.bounds));
+    NSLog(@"center: %@", NSStringFromCGPoint(view.center));
+}
+
+- (void)testImageLoad1 {
+    CALayer *layer = [CALayer layer];
+    
+    layer.position = CGPointMake(100, 100);
+    layer.bounds = CGRectMake(0, 0, 10, 10);
+    
+    layer.backgroundColor = UIColor.lightGrayColor.CGColor;
+    
+    layer.borderColor = UIColor.blueColor.CGColor;
+    layer.borderWidth = 2.0f;
+    
+    // contents 必须是 CGImage
+    layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"3.jpg"].CGImage);
+//    layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"31.jpg"].CGImage);
+//    layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"3.png"].CGImage);
+
+    // 从 contents 中裁剪内容
+    layer.contentsRect = CGRectMake(0.4, 0.4, 0.4, 0.4);
+    
+    // content
+    layer.contentsGravity = kCAGravityResize;
+    layer.contentsScale = [UIScreen mainScreen].scale;
+    
+    [self.view.layer addSublayer:layer];
+}
+
+- (void)testImageLoad2 {
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 10, 10)];
+//    imgView.image = [UIImage imageNamed:@"3.jpg"];
+//    imgView.image = [UIImage imageNamed:@"31.jpg"];
+//    imgView.image = [UIImage imageNamed:@"3.png"];
+    imgView.image = [UIImage imageNamed:@"3-no-alpha.png"];
+
+    [self.view addSubview:imgView];
+}
+
+- (void)testBasicLayer0 {
+    CALayer *layer = [CALayer layer];
+    
+    layer.position = CGPointMake(100, 100);
+    layer.bounds = CGRectMake(0, 0, 10, 10);
+    
+    layer.backgroundColor = UIColor.lightGrayColor.CGColor;
+    
+    layer.borderColor = UIColor.blueColor.CGColor;
+    layer.borderWidth = 2.0f;
+    
+    // contents 必须是 CGImage
+    layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"3.jpg"].CGImage);
+    
+    // 从 contents 中裁剪内容
+    layer.contentsRect = CGRectMake(0.4, 0.4, 0.4, 0.4);
+    
+    // content
+    layer.contentsGravity = kCAGravityResize;
+    layer.contentsScale = [UIScreen mainScreen].scale;
+    
+    [self.view.layer addSublayer:layer];
+}
+
+- (void)testBasicLayer2 {
+    CALayer *layerLarge = [CALayer layer];
+    layerLarge.position = CGPointMake(100, 100);
+    layerLarge.bounds = CGRectMake(0, 0, 300, 300);
+    layerLarge.opacity = 0.9;
+    layerLarge.backgroundColor = UIColor.whiteColor.CGColor;
+    [self.view.layer addSublayer:layerLarge];
+    
+    // allowsGroupOpacity = YES 子 layer 的透明度不能超过 父 layer 的透明度
+    layerLarge.allowsGroupOpacity = YES;
+    
+    CALayer *layerSmall = [CALayer layer];
+    layerSmall.position = CGPointMake(150, 150);
+    layerSmall.bounds = CGRectMake(0, 0, 100, 100);
+    layerSmall.opacity = 0.9;
+//    layerSmall.allowsGroupOpacity = YES;
+    layerSmall.backgroundColor = UIColor.blueColor.CGColor;
+    [layerLarge addSublayer:layerSmall];
+}
+
+- (void)testShadowLayer {
+    CALayer *layer = [CALayer layer];
+    
+    layer.position = CGPointMake(200, 200);
+    layer.bounds = CGRectMake(0, 0, 300, 300);
+    
+    layer.backgroundColor = UIColor.lightGrayColor.CGColor;
+    
+    layer.borderColor = UIColor.blueColor.CGColor;
+    layer.borderWidth = 2.0f;
+    
+    // contents 必须是 CGImage
+//    layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"3"].CGImage);
+    
+    layer.shadowColor = UIColor.redColor.CGColor;
+    layer.shadowOpacity = 0.8;
+    layer.shadowRadius = 2.0;
+    layer.shadowOffset = CGSizeMake(5, -5);
+    
+    // 注意 指定了 shadowPath 后，不在出现离屏渲染
+//    layer.shadowPath = [UIBezierPath bezierPathWithRect:layer.bounds].CGPath;
+    
+    [self.view.layer addSublayer:layer];
+}
+
+- (void)testMaskLayer {
+    CALayer *layer = [CALayer layer];
+    
+    layer.position = CGPointMake(200, 200);
+    layer.bounds = CGRectMake(0, 0, 300, 300);
+    
+//    layer.backgroundColor = UIColor.lightGrayColor.CGColor;
+    
+    layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"3"].CGImage);
+
+//    layer.borderColor = UIColor.blueColor.CGColor;
+//    layer.borderWidth = 2.0f;
+    
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.path = [UIBezierPath bezierPathWithRect:layer.bounds].CGPath;
+    maskLayer.lineWidth = 3;
+    maskLayer.strokeColor = UIColor.redColor.CGColor;
+    maskLayer.fillColor = UIColor.yellowColor.CGColor;
+    layer.mask = maskLayer;
+    
+    [self.view.layer addSublayer:layer];
+}
+
+- (void)testBasicLayer1 {
+    //
+    CALayer *layer = [CALayer layer];
+    layer.backgroundColor = UIColor.redColor.CGColor;
+    
+    //
+    
+//    layer.frame = CGRectMake(10, 10, 100, 100);
+    
+    // position 默认为 center ，相对于 anchorPosition 的偏移量
+    layer.anchorPoint = CGPointMake(0.5, 0.5);
+    layer.position = CGPointMake(100, 100);
+    layer.bounds = CGRectMake(0, 0, 120, 80);
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+
+//        CFTimeInterval currentTime = CACurrentMediaTime();
+//        CFTimeInterval currentTimeInLayer = [layer convertTime:currentTime fromLayer:nil];
+//        CFTimeInterval addTime = currentTimeInLayer;
+//        layer.beginTime = 0.3 + addTime;
+//        [layer setTimeOffset:0.5];
+
+        layer.speed = 0.5;
+        layer.fillMode = kCAFillModeForwards;
+//        layer.autoreverses = true;
+        layer.anchorPoint = CGPointMake(0, 0);
+    });
+    
+    // 以左上角为 anchorPoint
+//    layer.anchorPoint = CGPointMake(0, 0);
+//    layer.position = CGPointMake(0, 10);
+//    layer.bounds = CGRectMake(0, 0, 120, 80);
+    
+    
+    // 默认 (0.5, 0.5)
+    // (0, 0) 左上角
+    // (1, 1) 右下角
+    // anchorPoint 使用比例值
+    // Rotation 围绕 position 旋转，CALayer 用 anchorPoint 指定 position 在 bounds 中的位置
+//    layer.anchorPoint = CGPointMake(1, 0);
+    
+    
+    
+    NSLog(@"anchorPoint: %@", NSStringFromCGPoint(layer.anchorPoint));
+    NSLog(@"position: %@", NSStringFromCGPoint(layer.position));
+    NSLog(@"bounds: %@", NSStringFromCGRect(layer.bounds));
+    NSLog(@"frame: %@", NSStringFromCGRect(layer.frame));
+
+    [self.view.layer addSublayer:layer];
 }
 
 - (CATextLayer *)textLayer {
@@ -142,10 +343,6 @@
                                   UIColor.yellowColor.CGColor,
                                   UIColor.blueColor.CGColor, nil];
   
-//                                @[UIColor.redColor.CGColor,
-//                                  (CGColorRef *)UIColor.yellowColor.CGColor,
-//                                  (CGColorRef *)UIColor.blueColor.CGColor];
-        
         _gradientLayer.startPoint = CGPointMake(0, 0);
 //        _gradientLayer.endPoint = CGPointMake(0.5, 0.5);
         _gradientLayer.endPoint = CGPointMake(1, 1);
