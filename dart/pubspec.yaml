@@ -1,0 +1,5 @@
+dependencies:
+  url_launcher: ^0.4.2    # Good, any 0.4.x version where x >= 2 works.
+  image_picker: ^0.6.1+3
+  http: ^0.12.0+2
+
